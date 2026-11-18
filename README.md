@@ -29,14 +29,14 @@ Encounter, evolution and form data come from [PKHeX.Core](https://github.com/kws
 
 Pipeline: .NET exporter (PKHeX data) → `build/raw.json` → Python build step (stdlib only) → static page in `site/`.
 
-Needs the .NET 10 SDK, Python 3 and Node (for the page tests).
+Needs the .NET 10 SDK (`dotnet` on your PATH; the first run downloads PKHeX.Core from NuGet), Python 3 and Node 18 or later (for the page tests). Run the exporter first: the builder tests read `build/raw.json`.
 
 ```sh
 dotnet run --project exporter -- rules/games.json build/raw.json      # about 25 s
 PYTHONPATH=builder python3 -m dexbuild --raw build/raw.json --rules rules --out site/data/dex.json --write
 (cd builder && python3 -m unittest discover -s tests)
 (cd site && node --test tests/)
-python3 -m http.server 8000 --directory site                           # then open http://localhost:8000/
+python3 -m http.server 8000 --bind 127.0.0.1 --directory site          # then open http://localhost:8000/
 ```
 
 Without `--write` the build only prints its report (rows, left out, unverified cells, problems); it writes only when there are no problems. It writes `site/data/dex.json` and a gzipped copy, `dex.json.gz`, which is what the page fetches (about 270 KB instead of 6.9 MB; the browser unzips it with `DecompressionStream`).
