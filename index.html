@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Living form dex</title>
+<link rel="stylesheet" href="style.css">
+<script type="module" src="app.js"></script>
+</head>
+<body>
+<header class="bar">
+  <details class="own">
+    <summary>I own: <span id="own-summary">nothing chosen, all games shown</span></summary>
+    <div id="own-groups" class="own-groups"></div>
+  </details>
+  <label class="search">Search <input id="search" type="search" placeholder="Name, form or number" autocomplete="off"></label>
+  <button id="hide-ticked" type="button" aria-pressed="false">Hide ticked</button>
+  <span id="count" class="count" aria-live="polite"></span>
+  <button id="export" type="button">Export</button>
+  <button id="import" type="button">Import</button>
+  <input id="import-file" type="file" accept=".json,application/json" hidden>
+</header>
+<div id="messages" class="messages" role="status"></div>
+<main id="main" class="wrap">
+  <p class="loading">Loading the dex data…</p>
+</main>
+</body>
+</html>
