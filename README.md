@@ -13,6 +13,9 @@ export DOTNET_ROOT=$HOME/.dotnet DOTNET_CLI_TELEMETRY_OPTOUT=1 DOTNET_NOLOGO=1
 
 ## Serving
 
+Public copy: https://luff211.github.io/living-form-dex/ (GitHub Pages, `gh-pages` branch). After a `--write` build, run `deploy/publish-pages.sh` from the repo root to push the page files and `dex.json.gz` there. Ticks are saved per site, so use Export / Import to move them between this copy and the tailnet one.
+
+
 The page is served by a systemd user service, bound to the Tailscale address only (not LAN, not loopback):
 
 - `http://<host>.<tailnet>.ts.net:8507/` or `http://<tailscale-ip>:8507/`
