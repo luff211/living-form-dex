@@ -1,0 +1,2345 @@
+{
+ "exclude": {
+  "entries": [
+   {
+    "species": 483,
+    "forms": [
+     1,
+     1
+    ],
+    "reason": "Origin Forme needs the Adamant Crystal held; HOME strips items",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 484,
+    "forms": [
+     1,
+     1
+    ],
+    "reason": "Origin Forme needs the Lustrous Globe held; HOME strips items",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 487,
+    "forms": [
+     1,
+     1
+    ],
+    "reason": "Origin Forme needs the Griseous Orb or Core held, or the Distortion World; HOME strips items",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 492,
+    "forms": [
+     1,
+     1
+    ],
+    "reason": "Sky Forme goes back to Land Forme at night and when put in a box",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 493,
+    "forms": [
+     1,
+     18
+    ],
+    "reason": "type follows held plate; HOME strips items",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 649,
+    "forms": [
+     1,
+     4
+    ],
+    "reason": "Drive form follows the held Drive; HOME strips items",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 676,
+    "forms": [
+     1,
+     9
+    ],
+    "reason": "trims revert to Natural Form after a few days or when stored",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 720,
+    "forms": [
+     1,
+     1
+    ],
+    "reason": "Unbound form reverts to Confined when stored",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 773,
+    "forms": [
+     1,
+     17
+    ],
+    "reason": "type follows held memory; HOME strips items",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 888,
+    "forms": [
+     1,
+     1
+    ],
+    "reason": "Crowned form needs the Rusted Sword held; HOME strips items",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 889,
+    "forms": [
+     1,
+     1
+    ],
+    "reason": "Crowned form needs the Rusted Shield held; HOME strips items",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 1017,
+    "forms": [
+     1,
+     3
+    ],
+    "reason": "mask form follows the held mask; HOME strips items",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 59,
+    "forms": [
+     2,
+     2
+    ],
+    "reason": "Noble boss form seen only in Legends: Arceus battles; it cannot be caught",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 101,
+    "forms": [
+     2,
+     2
+    ],
+    "reason": "Noble boss form seen only in Legends: Arceus battles; it cannot be caught",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 549,
+    "forms": [
+     2,
+     2
+    ],
+    "reason": "Noble boss form seen only in Legends: Arceus battles; it cannot be caught",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 713,
+    "forms": [
+     2,
+     2
+    ],
+    "reason": "Noble boss form seen only in Legends: Arceus battles; it cannot be caught",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 900,
+    "forms": [
+     1,
+     1
+    ],
+    "reason": "Noble boss form seen only in Legends: Arceus battles; it cannot be caught",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 1007,
+    "forms": [
+     1,
+     4
+    ],
+    "reason": "ride form used only while riding; it cannot be kept as that form",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 1008,
+    "forms": [
+     1,
+     4
+    ],
+    "reason": "ride form used only while riding; it cannot be kept as that form",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 25,
+    "forms": [
+     101,
+     106
+    ],
+    "reason": "Cosplay Pikachu (Omega Ruby / Alpha Sapphire) cannot be moved out of its game",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 172,
+    "forms": [
+     101,
+     101
+    ],
+    "reason": "Spiky-eared Pichu (generation 4 event) cannot be moved to generation 5, so never reaches HOME",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 664,
+    "forms": [
+     1,
+     19
+    ],
+    "reason": "Scatterbug's pattern only shows once it evolves into Vivillon; one row for the species",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 665,
+    "forms": [
+     1,
+     19
+    ],
+    "reason": "Spewpa's pattern only shows once it evolves into Vivillon; one row for the species",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 20,
+    "forms": [
+     2,
+     2
+    ],
+    "reason": "Totem-sized Pokémon become regular-sized when moved to HOME",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 105,
+    "forms": [
+     2,
+     2
+    ],
+    "reason": "Totem-sized Pokémon become regular-sized when moved to HOME",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 735,
+    "forms": [
+     1,
+     1
+    ],
+    "reason": "Totem-sized Pokémon become regular-sized when moved to HOME",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 738,
+    "forms": [
+     1,
+     1
+    ],
+    "reason": "Totem-sized Pokémon become regular-sized when moved to HOME",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 743,
+    "forms": [
+     1,
+     1
+    ],
+    "reason": "Totem-sized Pokémon become regular-sized when moved to HOME",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 752,
+    "forms": [
+     1,
+     1
+    ],
+    "reason": "Totem-sized Pokémon become regular-sized when moved to HOME",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 754,
+    "forms": [
+     1,
+     1
+    ],
+    "reason": "Totem-sized Pokémon become regular-sized when moved to HOME",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 758,
+    "forms": [
+     1,
+     1
+    ],
+    "reason": "Totem-sized Pokémon become regular-sized when moved to HOME",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 777,
+    "forms": [
+     1,
+     1
+    ],
+    "reason": "Totem-sized Pokémon become regular-sized when moved to HOME",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 778,
+    "forms": [
+     2,
+     2
+    ],
+    "reason": "Totem-sized Pokémon become regular-sized when moved to HOME",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 784,
+    "forms": [
+     1,
+     1
+    ],
+    "reason": "Totem-sized Pokémon become regular-sized when moved to HOME",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 25,
+    "forms": [
+     8,
+     8
+    ],
+    "reason": "The partner Pikachu of Let's Go cannot be traded or moved to HOME",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 133,
+    "forms": [
+     1,
+     1
+    ],
+    "reason": "The partner Eevee of Let's Go cannot be traded or moved to HOME",
+    "verified": true,
+    "checked": "2026-11-16"
+   }
+  ]
+ },
+ "methods": {
+  "entries": [
+   {
+    "species": 201,
+    "form": 0,
+    "group": "GSC",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 0,
+    "group": "HGSS",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 1,
+    "group": "GSC",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 1,
+    "group": "HGSS",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 2,
+    "group": "GSC",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 2,
+    "group": "HGSS",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 3,
+    "group": "GSC",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 3,
+    "group": "HGSS",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 4,
+    "group": "GSC",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 4,
+    "group": "HGSS",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 5,
+    "group": "GSC",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 5,
+    "group": "HGSS",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 6,
+    "group": "GSC",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 6,
+    "group": "HGSS",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 7,
+    "group": "GSC",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 7,
+    "group": "HGSS",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 8,
+    "group": "GSC",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 8,
+    "group": "HGSS",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 9,
+    "group": "GSC",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 9,
+    "group": "HGSS",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 10,
+    "group": "GSC",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 10,
+    "group": "HGSS",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 11,
+    "group": "GSC",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 11,
+    "group": "HGSS",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 12,
+    "group": "GSC",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 12,
+    "group": "HGSS",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 13,
+    "group": "GSC",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 13,
+    "group": "HGSS",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 14,
+    "group": "GSC",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 14,
+    "group": "HGSS",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 15,
+    "group": "GSC",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 15,
+    "group": "HGSS",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 16,
+    "group": "GSC",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 16,
+    "group": "HGSS",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 17,
+    "group": "GSC",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 17,
+    "group": "HGSS",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 18,
+    "group": "GSC",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 18,
+    "group": "HGSS",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 19,
+    "group": "GSC",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 19,
+    "group": "HGSS",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 20,
+    "group": "GSC",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 20,
+    "group": "HGSS",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 21,
+    "group": "GSC",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 21,
+    "group": "HGSS",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 22,
+    "group": "GSC",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 22,
+    "group": "HGSS",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 23,
+    "group": "GSC",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 23,
+    "group": "HGSS",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 24,
+    "group": "GSC",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 24,
+    "group": "HGSS",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 25,
+    "group": "GSC",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 25,
+    "group": "HGSS",
+    "method": "Wild",
+    "place": "Ruins of Alph; letters unlock as the chamber puzzles are solved",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 0,
+    "group": "DPPt",
+    "method": "Wild",
+    "place": "Solaceon Ruins; the letter depends on the chamber",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 1,
+    "group": "DPPt",
+    "method": "Wild",
+    "place": "Solaceon Ruins; the letter depends on the chamber",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 2,
+    "group": "DPPt",
+    "method": "Wild",
+    "place": "Solaceon Ruins; the letter depends on the chamber",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 3,
+    "group": "DPPt",
+    "method": "Wild",
+    "place": "Solaceon Ruins; the letter depends on the chamber",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 4,
+    "group": "DPPt",
+    "method": "Wild",
+    "place": "Solaceon Ruins; the letter depends on the chamber",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 5,
+    "group": "DPPt",
+    "method": "Wild",
+    "place": "Solaceon Ruins; the letter depends on the chamber",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 6,
+    "group": "DPPt",
+    "method": "Wild",
+    "place": "Solaceon Ruins; the letter depends on the chamber",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 7,
+    "group": "DPPt",
+    "method": "Wild",
+    "place": "Solaceon Ruins; the letter depends on the chamber",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 8,
+    "group": "DPPt",
+    "method": "Wild",
+    "place": "Solaceon Ruins; the letter depends on the chamber",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 9,
+    "group": "DPPt",
+    "method": "Wild",
+    "place": "Solaceon Ruins; the letter depends on the chamber",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 10,
+    "group": "DPPt",
+    "method": "Wild",
+    "place": "Solaceon Ruins; the letter depends on the chamber",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 11,
+    "group": "DPPt",
+    "method": "Wild",
+    "place": "Solaceon Ruins; the letter depends on the chamber",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 12,
+    "group": "DPPt",
+    "method": "Wild",
+    "place": "Solaceon Ruins; the letter depends on the chamber",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 13,
+    "group": "DPPt",
+    "method": "Wild",
+    "place": "Solaceon Ruins; the letter depends on the chamber",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 14,
+    "group": "DPPt",
+    "method": "Wild",
+    "place": "Solaceon Ruins; the letter depends on the chamber",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 15,
+    "group": "DPPt",
+    "method": "Wild",
+    "place": "Solaceon Ruins; the letter depends on the chamber",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 16,
+    "group": "DPPt",
+    "method": "Wild",
+    "place": "Solaceon Ruins; the letter depends on the chamber",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 17,
+    "group": "DPPt",
+    "method": "Wild",
+    "place": "Solaceon Ruins; the letter depends on the chamber",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 18,
+    "group": "DPPt",
+    "method": "Wild",
+    "place": "Solaceon Ruins; the letter depends on the chamber",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 19,
+    "group": "DPPt",
+    "method": "Wild",
+    "place": "Solaceon Ruins; the letter depends on the chamber",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 20,
+    "group": "DPPt",
+    "method": "Wild",
+    "place": "Solaceon Ruins; the letter depends on the chamber",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 21,
+    "group": "DPPt",
+    "method": "Wild",
+    "place": "Solaceon Ruins; the letter depends on the chamber",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 22,
+    "group": "DPPt",
+    "method": "Wild",
+    "place": "Solaceon Ruins; the letter depends on the chamber",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 23,
+    "group": "DPPt",
+    "method": "Wild",
+    "place": "Solaceon Ruins; the letter depends on the chamber",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 24,
+    "group": "DPPt",
+    "method": "Wild",
+    "place": "Solaceon Ruins; the letter depends on the chamber",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 25,
+    "group": "DPPt",
+    "method": "Wild",
+    "place": "Solaceon Ruins; the letter depends on the chamber",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 26,
+    "group": "DPPt",
+    "method": "Wild",
+    "place": "Solaceon Ruins; the letter depends on the chamber",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 27,
+    "group": "DPPt",
+    "method": "Wild",
+    "place": "Solaceon Ruins; the letter depends on the chamber",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 664,
+    "form": 0,
+    "group": "XY",
+    "method": "Wild",
+    "place": "Route 2 and Santalune Forest; pattern follows the 3DS region setting",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 664,
+    "form": 1,
+    "group": "XY",
+    "method": "Wild",
+    "place": "Route 2 and Santalune Forest; pattern follows the 3DS region setting",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 664,
+    "form": 2,
+    "group": "XY",
+    "method": "Wild",
+    "place": "Route 2 and Santalune Forest; pattern follows the 3DS region setting",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 664,
+    "form": 3,
+    "group": "XY",
+    "method": "Wild",
+    "place": "Route 2 and Santalune Forest; pattern follows the 3DS region setting",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 664,
+    "form": 4,
+    "group": "XY",
+    "method": "Wild",
+    "place": "Route 2 and Santalune Forest; pattern follows the 3DS region setting",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 664,
+    "form": 5,
+    "group": "XY",
+    "method": "Wild",
+    "place": "Route 2 and Santalune Forest; pattern follows the 3DS region setting",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 664,
+    "form": 6,
+    "group": "XY",
+    "method": "Wild",
+    "place": "Route 2 and Santalune Forest; pattern follows the 3DS region setting",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 664,
+    "form": 7,
+    "group": "XY",
+    "method": "Wild",
+    "place": "Route 2 and Santalune Forest; pattern follows the 3DS region setting",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 664,
+    "form": 8,
+    "group": "XY",
+    "method": "Wild",
+    "place": "Route 2 and Santalune Forest; pattern follows the 3DS region setting",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 664,
+    "form": 9,
+    "group": "XY",
+    "method": "Wild",
+    "place": "Route 2 and Santalune Forest; pattern follows the 3DS region setting",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 664,
+    "form": 10,
+    "group": "XY",
+    "method": "Wild",
+    "place": "Route 2 and Santalune Forest; pattern follows the 3DS region setting",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 664,
+    "form": 11,
+    "group": "XY",
+    "method": "Wild",
+    "place": "Route 2 and Santalune Forest; pattern follows the 3DS region setting",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 664,
+    "form": 12,
+    "group": "XY",
+    "method": "Wild",
+    "place": "Route 2 and Santalune Forest; pattern follows the 3DS region setting",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 664,
+    "form": 13,
+    "group": "XY",
+    "method": "Wild",
+    "place": "Route 2 and Santalune Forest; pattern follows the 3DS region setting",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 664,
+    "form": 14,
+    "group": "XY",
+    "method": "Wild",
+    "place": "Route 2 and Santalune Forest; pattern follows the 3DS region setting",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 664,
+    "form": 15,
+    "group": "XY",
+    "method": "Wild",
+    "place": "Route 2 and Santalune Forest; pattern follows the 3DS region setting",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 664,
+    "form": 16,
+    "group": "XY",
+    "method": "Wild",
+    "place": "Route 2 and Santalune Forest; pattern follows the 3DS region setting",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 664,
+    "form": 17,
+    "group": "XY",
+    "method": "Wild",
+    "place": "Route 2 and Santalune Forest; pattern follows the 3DS region setting",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 869,
+    "form": 0,
+    "group": "SwSh",
+    "method": "Form change",
+    "place": "Evolve Milcery holding a sweet; cream depends on spin direction, spin length and time of day",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 869,
+    "form": 1,
+    "group": "SwSh",
+    "method": "Form change",
+    "place": "Evolve Milcery holding a sweet; cream depends on spin direction, spin length and time of day",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 869,
+    "form": 2,
+    "group": "SwSh",
+    "method": "Form change",
+    "place": "Evolve Milcery holding a sweet; cream depends on spin direction, spin length and time of day",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 869,
+    "form": 3,
+    "group": "SwSh",
+    "method": "Form change",
+    "place": "Evolve Milcery holding a sweet; cream depends on spin direction, spin length and time of day",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 869,
+    "form": 4,
+    "group": "SwSh",
+    "method": "Form change",
+    "place": "Evolve Milcery holding a sweet; cream depends on spin direction, spin length and time of day",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 869,
+    "form": 5,
+    "group": "SwSh",
+    "method": "Form change",
+    "place": "Evolve Milcery holding a sweet; cream depends on spin direction, spin length and time of day",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 869,
+    "form": 6,
+    "group": "SwSh",
+    "method": "Form change",
+    "place": "Evolve Milcery holding a sweet; cream depends on spin direction, spin length and time of day",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 869,
+    "form": 7,
+    "group": "SwSh",
+    "method": "Form change",
+    "place": "Evolve Milcery holding a sweet; cream depends on spin direction, spin length and time of day",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 869,
+    "form": 8,
+    "group": "SwSh",
+    "method": "Form change",
+    "place": "Evolve Milcery holding a sweet; cream depends on spin direction, spin length and time of day",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 479,
+    "form": 1,
+    "group": "SM",
+    "method": "Form change",
+    "place": "Check the boxes in the basement of Professor Kukui's lab with Rotom in the party",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 479,
+    "form": 1,
+    "group": "USUM",
+    "method": "Form change",
+    "place": "Check the boxes in the basement of Professor Kukui's lab with Rotom in the party",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 479,
+    "form": 2,
+    "group": "SM",
+    "method": "Form change",
+    "place": "Check the boxes in the basement of Professor Kukui's lab with Rotom in the party",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 479,
+    "form": 2,
+    "group": "USUM",
+    "method": "Form change",
+    "place": "Check the boxes in the basement of Professor Kukui's lab with Rotom in the party",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 479,
+    "form": 3,
+    "group": "SM",
+    "method": "Form change",
+    "place": "Check the boxes in the basement of Professor Kukui's lab with Rotom in the party",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 479,
+    "form": 3,
+    "group": "USUM",
+    "method": "Form change",
+    "place": "Check the boxes in the basement of Professor Kukui's lab with Rotom in the party",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 479,
+    "form": 4,
+    "group": "SM",
+    "method": "Form change",
+    "place": "Check the boxes in the basement of Professor Kukui's lab with Rotom in the party",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 479,
+    "form": 4,
+    "group": "USUM",
+    "method": "Form change",
+    "place": "Check the boxes in the basement of Professor Kukui's lab with Rotom in the party",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 479,
+    "form": 5,
+    "group": "SM",
+    "method": "Form change",
+    "place": "Check the boxes in the basement of Professor Kukui's lab with Rotom in the party",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 479,
+    "form": 5,
+    "group": "USUM",
+    "method": "Form change",
+    "place": "Check the boxes in the basement of Professor Kukui's lab with Rotom in the party",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 412,
+    "form": 1,
+    "group": "DPPt",
+    "method": "Form change",
+    "place": "Battle with Burmy in a cave or on sand",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 412,
+    "form": 2,
+    "group": "DPPt",
+    "method": "Form change",
+    "place": "Battle with Burmy inside a building",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 412,
+    "form": 1,
+    "group": "HGSS",
+    "method": "Form change",
+    "place": "Battle with Burmy in a cave or on sand",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 412,
+    "form": 2,
+    "group": "HGSS",
+    "method": "Form change",
+    "place": "Battle with Burmy inside a building",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 386,
+    "form": 1,
+    "group": "ORAS",
+    "method": "Form change",
+    "place": "Touch the meteorite in Professor Cozmo’s house in Fallarbor Town",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 386,
+    "form": 2,
+    "group": "ORAS",
+    "method": "Form change",
+    "place": "Touch the meteorite in Professor Cozmo’s house in Fallarbor Town",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 386,
+    "form": 3,
+    "group": "ORAS",
+    "method": "Form change",
+    "place": "Touch the meteorite in Professor Cozmo’s house in Fallarbor Town",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "form": 0,
+    "group": "XY",
+    "method": "Evolve",
+    "place": "Spewpa; the pattern follows the 3DS region setting, so one console gives one pattern",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "form": 0,
+    "group": "SV",
+    "method": "Wild",
+    "place": "Paldea, after a postcard from the matching region is received from Pokémon GO",
+    "versions": null,
+    "needs_other_game": true,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "form": 1,
+    "group": "XY",
+    "method": "Evolve",
+    "place": "Spewpa; the pattern follows the 3DS region setting, so one console gives one pattern",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "form": 1,
+    "group": "SV",
+    "method": "Wild",
+    "place": "Paldea, after a postcard from the matching region is received from Pokémon GO",
+    "versions": null,
+    "needs_other_game": true,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "form": 2,
+    "group": "XY",
+    "method": "Evolve",
+    "place": "Spewpa; the pattern follows the 3DS region setting, so one console gives one pattern",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "form": 2,
+    "group": "SV",
+    "method": "Wild",
+    "place": "Paldea, after a postcard from the matching region is received from Pokémon GO",
+    "versions": null,
+    "needs_other_game": true,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "form": 3,
+    "group": "XY",
+    "method": "Evolve",
+    "place": "Spewpa; the pattern follows the 3DS region setting, so one console gives one pattern",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "form": 3,
+    "group": "SV",
+    "method": "Wild",
+    "place": "Paldea, after a postcard from the matching region is received from Pokémon GO",
+    "versions": null,
+    "needs_other_game": true,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "form": 4,
+    "group": "XY",
+    "method": "Evolve",
+    "place": "Spewpa; the pattern follows the 3DS region setting, so one console gives one pattern",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "form": 4,
+    "group": "SV",
+    "method": "Wild",
+    "place": "Paldea, after a postcard from the matching region is received from Pokémon GO",
+    "versions": null,
+    "needs_other_game": true,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "form": 5,
+    "group": "XY",
+    "method": "Evolve",
+    "place": "Spewpa; the pattern follows the 3DS region setting, so one console gives one pattern",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "form": 5,
+    "group": "SV",
+    "method": "Wild",
+    "place": "Paldea, after a postcard from the matching region is received from Pokémon GO",
+    "versions": null,
+    "needs_other_game": true,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "form": 6,
+    "group": "XY",
+    "method": "Evolve",
+    "place": "Spewpa; the pattern follows the 3DS region setting, so one console gives one pattern",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "form": 6,
+    "group": "SV",
+    "method": "Wild",
+    "place": "Paldea, after a postcard from the matching region is received from Pokémon GO",
+    "versions": null,
+    "needs_other_game": true,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "form": 7,
+    "group": "XY",
+    "method": "Evolve",
+    "place": "Spewpa; the pattern follows the 3DS region setting, so one console gives one pattern",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "form": 7,
+    "group": "SV",
+    "method": "Wild",
+    "place": "Paldea, after a postcard from the matching region is received from Pokémon GO",
+    "versions": null,
+    "needs_other_game": true,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "form": 8,
+    "group": "XY",
+    "method": "Evolve",
+    "place": "Spewpa; the pattern follows the 3DS region setting, so one console gives one pattern",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "form": 8,
+    "group": "SV",
+    "method": "Wild",
+    "place": "Paldea, after a postcard from the matching region is received from Pokémon GO",
+    "versions": null,
+    "needs_other_game": true,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "form": 9,
+    "group": "XY",
+    "method": "Evolve",
+    "place": "Spewpa; the pattern follows the 3DS region setting, so one console gives one pattern",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "form": 9,
+    "group": "SV",
+    "method": "Wild",
+    "place": "Paldea, after a postcard from the matching region is received from Pokémon GO",
+    "versions": null,
+    "needs_other_game": true,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "form": 10,
+    "group": "XY",
+    "method": "Evolve",
+    "place": "Spewpa; the pattern follows the 3DS region setting, so one console gives one pattern",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "form": 10,
+    "group": "SV",
+    "method": "Wild",
+    "place": "Paldea, after a postcard from the matching region is received from Pokémon GO",
+    "versions": null,
+    "needs_other_game": true,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "form": 11,
+    "group": "XY",
+    "method": "Evolve",
+    "place": "Spewpa; the pattern follows the 3DS region setting, so one console gives one pattern",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "form": 11,
+    "group": "SV",
+    "method": "Wild",
+    "place": "Paldea, after a postcard from the matching region is received from Pokémon GO",
+    "versions": null,
+    "needs_other_game": true,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "form": 12,
+    "group": "XY",
+    "method": "Evolve",
+    "place": "Spewpa; the pattern follows the 3DS region setting, so one console gives one pattern",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "form": 12,
+    "group": "SV",
+    "method": "Wild",
+    "place": "Paldea, after a postcard from the matching region is received from Pokémon GO",
+    "versions": null,
+    "needs_other_game": true,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "form": 13,
+    "group": "XY",
+    "method": "Evolve",
+    "place": "Spewpa; the pattern follows the 3DS region setting, so one console gives one pattern",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "form": 13,
+    "group": "SV",
+    "method": "Wild",
+    "place": "Paldea, after a postcard from the matching region is received from Pokémon GO",
+    "versions": null,
+    "needs_other_game": true,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "form": 14,
+    "group": "XY",
+    "method": "Evolve",
+    "place": "Spewpa; the pattern follows the 3DS region setting, so one console gives one pattern",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "form": 14,
+    "group": "SV",
+    "method": "Wild",
+    "place": "Paldea, after a postcard from the matching region is received from Pokémon GO",
+    "versions": null,
+    "needs_other_game": true,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "form": 15,
+    "group": "XY",
+    "method": "Evolve",
+    "place": "Spewpa; the pattern follows the 3DS region setting, so one console gives one pattern",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "form": 15,
+    "group": "SV",
+    "method": "Wild",
+    "place": "Paldea, after a postcard from the matching region is received from Pokémon GO",
+    "versions": null,
+    "needs_other_game": true,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "form": 16,
+    "group": "XY",
+    "method": "Evolve",
+    "place": "Spewpa; the pattern follows the 3DS region setting, so one console gives one pattern",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "form": 16,
+    "group": "SV",
+    "method": "Wild",
+    "place": "Paldea, after a postcard from the matching region is received from Pokémon GO",
+    "versions": null,
+    "needs_other_game": true,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "form": 17,
+    "group": "XY",
+    "method": "Evolve",
+    "place": "Spewpa; the pattern follows the 3DS region setting, so one console gives one pattern",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "form": 17,
+    "group": "SV",
+    "method": "Wild",
+    "place": "Paldea, after a postcard from the matching region is received from Pokémon GO",
+    "versions": null,
+    "needs_other_game": true,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "form": 18,
+    "group": "SV",
+    "method": "Wild",
+    "place": "Paldea; Fancy is the pattern found when no Pokémon GO postcard is active",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 26,
+    "group": "HGSS",
+    "method": "Wild",
+    "place": "Ruins of Alph; appears after all 26 letters are caught",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "form": 27,
+    "group": "HGSS",
+    "method": "Wild",
+    "place": "Ruins of Alph; appears after all 26 letters are caught",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 137,
+    "form": 0,
+    "group": "RBY",
+    "method": "Static",
+    "place": "Celadon Game Corner prize",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 641,
+    "form": 1,
+    "group": "ORAS",
+    "method": "Form change",
+    "place": "Reveal Glass from the mirror shop in Mauville City",
+    "versions": [
+     "OR"
+    ],
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 642,
+    "form": 1,
+    "group": "ORAS",
+    "method": "Form change",
+    "place": "Reveal Glass from the mirror shop in Mauville City",
+    "versions": [
+     "AS"
+    ],
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 645,
+    "form": 1,
+    "group": "ORAS",
+    "method": "Form change",
+    "place": "Reveal Glass from the mirror shop in Mauville City",
+    "versions": null,
+    "note": "Needs Tornadus and Thundurus together, and one of them comes from the other version",
+    "needs_other_game": true,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 641,
+    "form": 1,
+    "group": "USUM",
+    "method": "Form change",
+    "place": "Reveal Glass from Heahea City",
+    "versions": [
+     "US"
+    ],
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 642,
+    "form": 1,
+    "group": "USUM",
+    "method": "Form change",
+    "place": "Reveal Glass from Heahea City",
+    "versions": [
+     "UM"
+    ],
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 645,
+    "form": 1,
+    "group": "USUM",
+    "method": "Form change",
+    "place": "Reveal Glass from Heahea City",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 641,
+    "form": 1,
+    "group": "SwSh",
+    "method": "Form change",
+    "place": "Reveal Glass from the bargain shop in Stow-on-Side",
+    "versions": null,
+    "dlc": "Crown Tundra",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 642,
+    "form": 1,
+    "group": "SwSh",
+    "method": "Form change",
+    "place": "Reveal Glass from the bargain shop in Stow-on-Side",
+    "versions": null,
+    "dlc": "Crown Tundra",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 645,
+    "form": 1,
+    "group": "SwSh",
+    "method": "Form change",
+    "place": "Reveal Glass from the bargain shop in Stow-on-Side",
+    "versions": null,
+    "dlc": "Crown Tundra",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 641,
+    "form": 1,
+    "group": "PLA",
+    "method": "Form change",
+    "place": "Reveal Glass from Cogita after the request Incarnate Forces of Hisui",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 642,
+    "form": 1,
+    "group": "PLA",
+    "method": "Form change",
+    "place": "Reveal Glass from Cogita after the request Incarnate Forces of Hisui",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 645,
+    "form": 1,
+    "group": "PLA",
+    "method": "Form change",
+    "place": "Reveal Glass from Cogita after the request Incarnate Forces of Hisui",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 905,
+    "form": 1,
+    "group": "PLA",
+    "method": "Form change",
+    "place": "Reveal Glass from Cogita after the request Incarnate Forces of Hisui",
+    "versions": null,
+    "verified": true,
+    "checked": "2026-11-16"
+   }
+  ]
+ },
+ "annotate": {
+  "entries": [
+   {
+    "species": 386,
+    "form": 3,
+    "group": "RSE",
+    "note": "Does not carry to HOME",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 386,
+    "form": 1,
+    "group": "FRLG",
+    "note": "Does not carry to HOME",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 386,
+    "form": 2,
+    "group": "FRLG",
+    "note": "Does not carry to HOME",
+    "verified": true,
+    "checked": "2026-11-16"
+   }
+  ]
+ },
+ "no_source": {
+  "entries": []
+ },
+ "no_spread": {
+  "entries": [
+   {
+    "species": 666,
+    "form": 18,
+    "reason": "Fancy pattern came only from events; never wild and not from evolving a Spewpa",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "form": 19,
+    "reason": "Poké Ball pattern came only from events; never wild and not from evolving a Spewpa",
+    "verified": true,
+    "checked": "2026-11-16"
+   }
+  ]
+ },
+ "mega_forms": {
+  "entries": [
+   {
+    "species": 670,
+    "forms": [
+     5
+    ],
+    "note": "Mega Floette is the Eternal Flower form",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 678,
+    "forms": [
+     0,
+     1
+    ],
+    "note": "Every form has a Mega in Legends: Z-A",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 978,
+    "forms": [
+     0,
+     1,
+     2
+    ],
+    "note": "Every form has a Mega in Legends: Z-A",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 801,
+    "forms": [
+     0,
+     1
+    ],
+    "note": "Every form has a Mega in Legends: Z-A",
+    "verified": true,
+    "checked": "2026-11-16"
+   }
+  ]
+ },
+ "form_varies": {
+  "entries": [
+   {
+    "species": 774,
+    "group": "SM",
+    "note": "Core colour is random",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 774,
+    "group": "USUM",
+    "note": "Core colour is random",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 774,
+    "group": "SV",
+    "note": "Core colour is random",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 201,
+    "group": "ORAS",
+    "note": "Any letter can appear",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 664,
+    "group": "XY",
+    "note": "Pattern follows the 3DS region setting",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 664,
+    "group": "SV",
+    "note": "Pattern follows the Pokémon GO postcard; Fancy without one",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 665,
+    "group": "XY",
+    "note": "Pattern follows the 3DS region setting",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 665,
+    "group": "SV",
+    "note": "Pattern follows the Pokémon GO postcard; Fancy without one",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 664,
+    "group": "USUM",
+    "note": "Pattern follows the 3DS region setting",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 665,
+    "group": "USUM",
+    "note": "Pattern follows the 3DS region setting",
+    "verified": true,
+    "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "group": "USUM",
+    "note": "Pattern follows the 3DS region setting",
+    "verified": true,
+    "checked": "2026-11-16"
+   }
+  ]
+ }
+}

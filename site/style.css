@@ -1,0 +1,110 @@
+:root {
+  color-scheme: light dark;
+  --bg: #fbfbfa;
+  --fg: #1d1f21;
+  --muted: #6b6f73;
+  --line: #dcdedf;
+  --head: #f0f1f1;
+  --pin: #fbfbfa;
+  --on: #2f5d8a;
+  --on-fg: #fff;
+  --warn-bg: #fff4d6;
+  --warn-fg: #5c4200;
+  --ended: #8a8d90;
+  --unv: #9a5b00;
+  --focus: #2f7fd0;
+  --tick: #eef5ec;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #17191b;
+    --fg: #e3e5e7;
+    --muted: #9a9ea3;
+    --line: #34383b;
+    --head: #222528;
+    --pin: #17191b;
+    --on: #6fa3d6;
+    --on-fg: #0d1114;
+    --warn-bg: #3a2f12;
+    --warn-fg: #f2dc9e;
+    --ended: #7c8084;
+    --unv: #e0a64f;
+    --focus: #7db6ef;
+    --tick: #1d2a1e;
+  }
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body {
+  display: flex; flex-direction: column;
+  background: var(--bg); color: var(--fg);
+  font: 13px/1.35 system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 1px; }
+
+button {
+  font: inherit; color: var(--fg); background: var(--bg);
+  border: 1px solid var(--line); border-radius: 4px; padding: 2px 8px; cursor: pointer;
+}
+button[aria-pressed="true"] { background: var(--on); color: var(--on-fg); border-color: var(--on); }
+
+.bar {
+  display: flex; flex-wrap: wrap; align-items: flex-start; gap: 8px 14px;
+  padding: 8px 12px; border-bottom: 1px solid var(--line);
+}
+.own { flex: 1 1 100%; order: 9; }
+.own:not([open]) { flex: 0 1 auto; order: 0; }
+.own summary { cursor: pointer; padding: 2px 0; }
+.own-groups { display: flex; flex-wrap: wrap; gap: 6px 16px; padding: 6px 0 2px; }
+.own-group { display: flex; gap: 4px; align-items: baseline; }
+.own-group span { color: var(--muted); font-size: 12px; }
+.search input { font: inherit; width: 16em; padding: 2px 6px; margin-left: 4px; }
+.count { color: var(--muted); padding-top: 3px; font-variant-numeric: tabular-nums; }
+
+.messages:empty { display: none; }
+.messages p { margin: 0; padding: 4px 12px; background: var(--warn-bg); color: var(--warn-fg); }
+
+.wrap { flex: 1; min-height: 0; overflow: auto; }
+.loading, .load-error { padding: 16px 12px; }
+.load-error code { display: block; margin-top: 6px; color: var(--muted); white-space: pre-wrap; }
+
+table { border-collapse: separate; border-spacing: 0; }
+th, td {
+  vertical-align: top; text-align: left; padding: 3px 6px;
+  border-bottom: 1px solid var(--line); border-right: 1px solid var(--line);
+}
+thead th {
+  position: sticky; top: 0; z-index: 2; background: var(--head); font-weight: 600;
+}
+thead .route { display: block; font-weight: 400; font-size: 11px; color: var(--muted); max-width: 16em; }
+td.game, th.game { min-width: 13em; max-width: 19em; }
+
+/* Pinned columns: tick, #, name, form */
+.p0, .p1, .p2, .p3 { position: sticky; background: var(--pin); z-index: 1; }
+thead .p0, thead .p1, thead .p2, thead .p3 { z-index: 3; background: var(--head); }
+.p0 { left: 0; width: 2.2em; min-width: 2.2em; text-align: center; }
+.p1 { left: 2.2em; width: 3.6em; min-width: 3.6em; font-variant-numeric: tabular-nums; color: var(--muted); }
+.p2 { left: 5.8em; width: 12em; min-width: 12em; max-width: 12em; }
+.p3 { left: 17.8em; width: 9em; min-width: 9em; max-width: 9em; border-right: 2px solid var(--line); }
+tr.ticked td.p0, tr.ticked td.p1, tr.ticked td.p2, tr.ticked td.p3 { background: var(--tick); }
+.p0 input { margin: 2px 0 0; }
+
+.avail { display: block; margin-top: 2px; font-size: 11px; color: var(--unv); }
+.flag, .empty { color: var(--muted); }
+
+.entry { margin: 0 0 2px; }
+.entry .dlc, .entry .marks { color: var(--muted); }
+.entry.dim { opacity: 0.45; }
+.entry.ended .what { color: var(--ended); text-decoration: line-through; }
+.tag {
+  font-size: 10px; border: 1px solid currentColor; border-radius: 3px; padding: 0 3px; margin-left: 3px;
+  white-space: nowrap;
+}
+.tag.ended { color: var(--ended); }
+.entry.needs .what { color: var(--ended); }
+.tag.needs { color: var(--unv); }
+.tag.unv { color: var(--unv); cursor: help; }
+.note { display: block; font-size: 11px; color: var(--muted); font-style: italic; }
+.more { margin-top: 2px; padding: 0 6px; font-size: 11px; }
+td.expandable { cursor: pointer; }

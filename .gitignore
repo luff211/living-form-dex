@@ -1,0 +1,7 @@
+.superpowers/
+build/
+site/data/dex.json
+exporter/bin/
+exporter/obj/
+__pycache__/
+site/data/dex.json.gz

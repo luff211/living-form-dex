@@ -1,0 +1,15 @@
+[Unit]
+Description=Living form dex (static page, Tailscale only)
+After=network-online.target
+
+[Service]
+# Bound to the Tailscale address only: reachable on the tailnet, not on the LAN.
+# BIND=<your Tailscale IP> lives in ~/.config/living-form-dex.env, outside the repo.
+# Restart covers boot ordering, when tailscaled has not brought the address up yet.
+EnvironmentFile=%h/.config/living-form-dex.env
+ExecStart=/usr/bin/python3 -m http.server 8507 --bind ${BIND} --directory %h/living-form-dex/site
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

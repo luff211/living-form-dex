@@ -1,0 +1,1554 @@
+{
+ "entries": [
+  {
+   "group": "FRLG",
+   "species": 386,
+   "location_contains": "Birth Island",
+   "set": {
+    "ended": false,
+    "note": "Aurora Ticket is given after the Hall of Fame"
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "FRLG",
+   "species": 249,
+   "location_contains": "Navel Rock",
+   "set": {
+    "ended": false,
+    "note": "Mystic Ticket is given after the Hall of Fame"
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "FRLG",
+   "species": 250,
+   "location_contains": "Navel Rock",
+   "set": {
+    "ended": false,
+    "note": "Mystic Ticket is given after the Hall of Fame"
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "GSC",
+   "species": 251,
+   "location_contains": "Ilex Forest",
+   "set": {
+    "ended": false,
+    "note": "Virtual Console Crystal gives the GS Ball after the Hall of Fame"
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "RSE",
+   "species": 386,
+   "location_contains": "Birth Island",
+   "set": {
+    "ended": true,
+    "method": "Event",
+    "note": "Needed the Aurora Ticket, a distributed event item"
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "RSE",
+   "species": 249,
+   "location_contains": "Navel Rock",
+   "set": {
+    "ended": true,
+    "method": "Event",
+    "note": "Needed the Mystic Ticket, a distributed event item"
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "RSE",
+   "species": 250,
+   "location_contains": "Navel Rock",
+   "set": {
+    "ended": true,
+    "method": "Event",
+    "note": "Needed the Mystic Ticket, a distributed event item"
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "RSE",
+   "species": 151,
+   "location_contains": "Faraway Island",
+   "set": {
+    "ended": true,
+    "method": "Event",
+    "note": "Needed the Old Sea Map, a distributed event item"
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "RSE",
+   "species": 380,
+   "location_contains": "Southern Island",
+   "set": {
+    "ended": true,
+    "method": "Event",
+    "note": "Needed the Eon Ticket, a distributed event item"
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "RSE",
+   "species": 381,
+   "location_contains": "Southern Island",
+   "set": {
+    "ended": true,
+    "method": "Event",
+    "note": "Needed the Eon Ticket, a distributed event item"
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "DPPt",
+   "species": 491,
+   "location_contains": "Newmoon Island",
+   "set": {
+    "ended": true,
+    "method": "Event",
+    "note": "Needed the Member Card, a distributed event item"
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "DPPt",
+   "species": 492,
+   "location_contains": "Flower Paradise",
+   "set": {
+    "ended": true,
+    "method": "Event",
+    "note": "Needed Oak's Letter, a distributed event item"
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "HGSS",
+   "species": 483,
+   "location_contains": "Sinjoh Ruins",
+   "set": {
+    "ended": true,
+    "method": "Event",
+    "note": "Needed an Arceus from an event"
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "HGSS",
+   "species": 484,
+   "location_contains": "Sinjoh Ruins",
+   "set": {
+    "ended": true,
+    "method": "Event",
+    "note": "Needed an Arceus from an event"
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "HGSS",
+   "species": 487,
+   "location_contains": "Sinjoh Ruins",
+   "set": {
+    "ended": true,
+    "method": "Event",
+    "note": "Needed an Arceus from an event"
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "BW",
+   "species": 494,
+   "location_contains": "Liberty Garden",
+   "set": {
+    "ended": true,
+    "method": "Event",
+    "note": "Needed the Liberty Pass, a distributed event item"
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "BDSP",
+   "species": 151,
+   "location_contains": "Floaroma Town",
+   "set": {
+    "note": "Needs Let's Go Pikachu or Let's Go Eevee save data on the same console",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "BDSP",
+   "species": 385,
+   "location_contains": "Floaroma Town",
+   "set": {
+    "note": "Needs Sword or Shield save data on the same console",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "BDSP",
+   "species": 493,
+   "location_contains": "Hall of Origin",
+   "set": {
+    "note": "Needs Legends: Arceus save data with all main missions done, on the same console",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "BDSP",
+   "species": 491,
+   "location_contains": "Newmoon Island",
+   "set": {
+    "ended": true,
+    "method": "Event",
+    "note": "Needed the Member Card, a distributed event item"
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "BDSP",
+   "species": 492,
+   "location_contains": "Flower Paradise",
+   "set": {
+    "ended": true,
+    "method": "Event",
+    "note": "Needed Oak's Letter, a distributed event item"
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "PLA",
+   "species": 491,
+   "location_contains": "",
+   "set": {
+    "note": "Needs Brilliant Diamond or Shining Pearl save data on the same console",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "PLA",
+   "species": 492,
+   "location_contains": "",
+   "set": {
+    "note": "Needs Sword or Shield save data on the same console",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "DPPt",
+   "species": 486,
+   "location_contains": "Snowpoint Temple",
+   "set": {
+    "note": "Needs Regirock, Regice and Registeel in the party, brought from a generation 3 game or caught with an event Regigigas",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "DPPt",
+   "species": 377,
+   "location_contains": "Rock Peak Ruins",
+   "set": {
+    "note": "Needs Regigigas in the party; Regigigas needs the generation 3 Regis or an event",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "DPPt",
+   "species": 378,
+   "location_contains": "Iceberg Ruins",
+   "set": {
+    "note": "Needs Regigigas in the party; Regigigas needs the generation 3 Regis or an event",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "DPPt",
+   "species": 379,
+   "location_contains": "Iron Ruins",
+   "set": {
+    "note": "Needs Regigigas in the party; Regigigas needs the generation 3 Regis or an event",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "HGSS",
+   "species": 380,
+   "location_contains": "Pewter City",
+   "set": {
+    "ended": true,
+    "method": "Event",
+    "note": "Needed the Enigma Stone, a distributed event item"
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "HGSS",
+   "species": 381,
+   "location_contains": "Pewter City",
+   "set": {
+    "ended": true,
+    "method": "Event",
+    "note": "Needed the Enigma Stone, a distributed event item"
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "HGSS",
+   "species": 384,
+   "location_contains": "Embedded Tower",
+   "set": {
+    "note": "Needs Groudon and Kyogre in the party; one of them comes only from the other version",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "B2W2",
+   "species": 378,
+   "location_contains": "Iceberg Chamber",
+   "set": {
+    "note": "The Iceberg Key comes from White 2 (sent by Unova Link)",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16",
+   "versions": [
+    "B2"
+   ]
+  },
+  {
+   "group": "B2W2",
+   "species": 379,
+   "location_contains": "Iron Chamber",
+   "set": {
+    "note": "The Iron Key comes from Black 2 (sent by Unova Link)",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16",
+   "versions": [
+    "W2"
+   ]
+  },
+  {
+   "group": "B2W2",
+   "species": 486,
+   "location_contains": "Twist Mountain",
+   "set": {
+    "note": "Needs Regirock, Regice and Registeel in the party; one of them needs a key from the other version",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "XY",
+   "species": null,
+   "location_contains": "Friend Safari",
+   "set": {
+    "note": "Needs registered 3DS friends; which Pokémon appear depends on the friend",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "SM",
+   "species": 801,
+   "location_contains": "a lovely place",
+   "set": {
+    "method": "Event",
+    "note": "Scan the Magearna QR code after the main story; the code does not expire"
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "USUM",
+   "species": 801,
+   "location_contains": "a lovely place",
+   "set": {
+    "method": "Event",
+    "note": "Scan the Magearna QR code after the main story; the code does not expire"
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "SV",
+   "species": 243,
+   "location_contains": "West Province (Area One) (1)",
+   "versions": [
+    "VL"
+   ],
+   "set": {
+    "note": "In Violet its treat comes only from a group quest, which needs other players",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "SV",
+   "species": 244,
+   "location_contains": "East Province (Area Three)",
+   "versions": [
+    "VL"
+   ],
+   "set": {
+    "note": "In Violet its treat comes only from a group quest, which needs other players",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "SV",
+   "species": 245,
+   "location_contains": "Casseroya Lake (1)",
+   "versions": [
+    "VL"
+   ],
+   "set": {
+    "note": "In Violet its treat comes only from a group quest, which needs other players",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "SV",
+   "species": 250,
+   "location_contains": "South Province (Area Four)",
+   "versions": [
+    "VL"
+   ],
+   "set": {
+    "note": "In Violet its treat comes only from a group quest, which needs other players",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "SV",
+   "species": 381,
+   "location_contains": "North Province (Area Two)",
+   "versions": [
+    "VL"
+   ],
+   "set": {
+    "note": "In Violet its treat comes only from a group quest, which needs other players",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "SV",
+   "species": 383,
+   "location_contains": "Alfornada Cavern",
+   "versions": [
+    "VL"
+   ],
+   "set": {
+    "note": "In Violet its treat comes only from a group quest, which needs other players",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "SV",
+   "species": 643,
+   "location_contains": "East Province (Area One) (1)",
+   "versions": [
+    "VL"
+   ],
+   "set": {
+    "note": "In Violet its treat comes only from a group quest, which needs other players",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "SV",
+   "species": 791,
+   "location_contains": "Pokémon League",
+   "versions": [
+    "VL"
+   ],
+   "set": {
+    "note": "In Violet its treat comes only from a group quest, which needs other players",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "SV",
+   "species": 896,
+   "location_contains": "Glaseado Mountain (1)",
+   "versions": [
+    "VL"
+   ],
+   "set": {
+    "note": "In Violet its treat comes only from a group quest, which needs other players",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "SV",
+   "species": 249,
+   "location_contains": "North Paldean Sea",
+   "versions": [
+    "SL"
+   ],
+   "set": {
+    "note": "In Scarlet its treat comes only from a group quest, which needs other players",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "SV",
+   "species": 380,
+   "location_contains": "South Province (Area Four)",
+   "versions": [
+    "SL"
+   ],
+   "set": {
+    "note": "In Scarlet its treat comes only from a group quest, which needs other players",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "SV",
+   "species": 382,
+   "location_contains": "Casseroya Lake (1)",
+   "versions": [
+    "SL"
+   ],
+   "set": {
+    "note": "In Scarlet its treat comes only from a group quest, which needs other players",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "SV",
+   "species": 638,
+   "location_contains": "North Province (Area Two)",
+   "versions": [
+    "SL"
+   ],
+   "set": {
+    "note": "In Scarlet its treat comes only from a group quest, which needs other players",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "SV",
+   "species": 639,
+   "location_contains": "West Province (Area One) (1)",
+   "versions": [
+    "SL"
+   ],
+   "set": {
+    "note": "In Scarlet its treat comes only from a group quest, which needs other players",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "SV",
+   "species": 640,
+   "location_contains": "Tagtree Thicket (1)",
+   "versions": [
+    "SL"
+   ],
+   "set": {
+    "note": "In Scarlet its treat comes only from a group quest, which needs other players",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "SV",
+   "species": 644,
+   "location_contains": "South Province (Area Five)",
+   "versions": [
+    "SL"
+   ],
+   "set": {
+    "note": "In Scarlet its treat comes only from a group quest, which needs other players",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "SV",
+   "species": 792,
+   "location_contains": "Casseroya Lake (1)",
+   "versions": [
+    "SL"
+   ],
+   "set": {
+    "note": "In Scarlet its treat comes only from a group quest, which needs other players",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "SV",
+   "species": 897,
+   "location_contains": "Glaseado Mountain (1)",
+   "versions": [
+    "SL"
+   ],
+   "set": {
+    "note": "In Scarlet its treat comes only from a group quest, which needs other players",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "RBY",
+   "species": 123,
+   "location_contains": "",
+   "versions": [
+    "GN"
+   ],
+   "set": {
+    "drop": true
+   },
+   "note": "Game Corner prize lists differ by version",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "RBY",
+   "species": 127,
+   "location_contains": "",
+   "versions": [
+    "RD"
+   ],
+   "set": {
+    "drop": true
+   },
+   "note": "Game Corner prize lists differ by version",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "RBY",
+   "species": 37,
+   "location_contains": "",
+   "versions": [
+    "RD"
+   ],
+   "set": {
+    "drop": true
+   },
+   "note": "Game Corner prize lists differ by version",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "RSE",
+   "species": 273,
+   "location_contains": "",
+   "versions": [
+    "S"
+   ],
+   "set": {
+    "note": "Only as a mass outbreak passed on by mixing records with another version",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "RSE",
+   "species": 274,
+   "location_contains": "",
+   "versions": [
+    "S"
+   ],
+   "set": {
+    "note": "Only as a mass outbreak passed on by mixing records with another version",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "RSE",
+   "species": 283,
+   "location_contains": "",
+   "versions": [
+    "E"
+   ],
+   "set": {
+    "note": "Only as a mass outbreak passed on by mixing records with another version",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "DPPt",
+   "species": 408,
+   "location_contains": "Mining Museum",
+   "versions": [
+    "P"
+   ],
+   "set": {
+    "note": "The Skull Fossil is found only in the other version",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "DPPt",
+   "species": 410,
+   "location_contains": "Mining Museum",
+   "versions": [
+    "D"
+   ],
+   "set": {
+    "note": "The Armor Fossil is found only in the other version",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "DPPt",
+   "species": 408,
+   "location_contains": "Mining Museum",
+   "versions": [
+    "Pt"
+   ],
+   "set": {
+    "note": "Platinum gives either the Skull or the Armor Fossil, fixed by the Trainer ID"
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "DPPt",
+   "species": 410,
+   "location_contains": "Mining Museum",
+   "versions": [
+    "Pt"
+   ],
+   "set": {
+    "note": "Platinum gives either the Skull or the Armor Fossil, fixed by the Trainer ID"
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "BDSP",
+   "species": 408,
+   "location_contains": "Oreburgh City",
+   "versions": [
+    "SP"
+   ],
+   "set": {
+    "note": "The Skull Fossil is found only in the other version",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "BDSP",
+   "species": 410,
+   "location_contains": "Oreburgh City",
+   "versions": [
+    "BD"
+   ],
+   "set": {
+    "note": "The Armor Fossil is found only in the other version",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "SM",
+   "species": 408,
+   "location_contains": "Route 8",
+   "versions": [
+    "MN"
+   ],
+   "set": {
+    "note": "Its fossil is sold only in the other version",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "SM",
+   "species": 564,
+   "location_contains": "Route 8",
+   "versions": [
+    "MN"
+   ],
+   "set": {
+    "note": "Its fossil is sold only in the other version",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "SM",
+   "species": 410,
+   "location_contains": "Route 8",
+   "versions": [
+    "SN"
+   ],
+   "set": {
+    "note": "Its fossil is sold only in the other version",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "SM",
+   "species": 566,
+   "location_contains": "Route 8",
+   "versions": [
+    "SN"
+   ],
+   "set": {
+    "note": "Its fossil is sold only in the other version",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "ORAS",
+   "species": 380,
+   "location_contains": "Southern Island",
+   "versions": [
+    "OR"
+   ],
+   "set": {
+    "method": "Event",
+    "ended": true,
+    "note": "Needs the Eon Ticket, an event item that also spread by StreetPass"
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "ORAS",
+   "species": 381,
+   "location_contains": "Southern Island",
+   "versions": [
+    "AS"
+   ],
+   "set": {
+    "method": "Event",
+    "ended": true,
+    "note": "Needs the Eon Ticket, an event item that also spread by StreetPass"
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "BW",
+   "species": 645,
+   "location_contains": "Abundant Shrine",
+   "set": {
+    "note": "Needs Tornadus and Thundurus together, and one of them comes from the other version",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "ORAS",
+   "species": 645,
+   "location_contains": "Soaring in the sky",
+   "set": {
+    "note": "Needs Tornadus and Thundurus together, and one of them comes from the other version",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "SwSh",
+   "species": 801,
+   "location_contains": "Pokémon HOME",
+   "set": {
+    "ended": false,
+    "note": "Reward for completing the National Pokédex in Pokémon HOME"
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "SwSh",
+   "species": 647,
+   "location_contains": "Pokémon HOME",
+   "set": {
+    "ended": false,
+    "drop": true,
+    "note": "Shiny; reward for completing the Galar, Isle of Armor and Crown Tundra Pokédexes in Pokémon HOME",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "BDSP",
+   "species": 490,
+   "location_contains": "Pokémon HOME",
+   "set": {
+    "ended": false,
+    "drop": true,
+    "note": "Shiny; reward for completing the Sinnoh Pokédex in Pokémon HOME",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "PLA",
+   "species": 905,
+   "location_contains": "Pokémon HOME",
+   "set": {
+    "ended": false,
+    "drop": true,
+    "note": "Shiny; reward for completing the Hisui Pokédex in Pokémon HOME"
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "SV",
+   "species": 648,
+   "location_contains": "Pokémon HOME",
+   "set": {
+    "ended": false,
+    "drop": true,
+    "note": "Shiny; reward for completing the Paldea, Kitakami and Blueberry Pokédexes in Pokémon HOME",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "ZA",
+   "species": 721,
+   "location_contains": "Pokémon HOME",
+   "set": {
+    "ended": false,
+    "drop": true,
+    "note": "Shiny; reward for completing the Lumiose, Hyperspace and Mega Evolution Pokédexes in Pokémon HOME"
+   },
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "USUM",
+   "species": 138,
+   "location_contains": "Route 8",
+   "versions": [
+    "UM"
+   ],
+   "set": {
+    "note": "Fossil sold only in the other version; here it comes from Rare-Treasure Hunting on Isle Aphun in Poké Pelago"
+   },
+   "verified": true,
+   "checked": "2026-11-17"
+  },
+  {
+   "group": "USUM",
+   "species": 347,
+   "location_contains": "Route 8",
+   "versions": [
+    "UM"
+   ],
+   "set": {
+    "note": "Fossil sold only in the other version; here it comes from Rare-Treasure Hunting on Isle Aphun in Poké Pelago"
+   },
+   "verified": true,
+   "checked": "2026-11-17"
+  },
+  {
+   "group": "USUM",
+   "species": 408,
+   "location_contains": "Route 8",
+   "versions": [
+    "UM"
+   ],
+   "set": {
+    "note": "Fossil sold only in the other version; here it comes from Rare-Treasure Hunting on Isle Aphun in Poké Pelago"
+   },
+   "verified": true,
+   "checked": "2026-11-17"
+  },
+  {
+   "group": "USUM",
+   "species": 564,
+   "location_contains": "Route 8",
+   "versions": [
+    "UM"
+   ],
+   "set": {
+    "note": "Fossil sold only in the other version; here it comes from Rare-Treasure Hunting on Isle Aphun in Poké Pelago"
+   },
+   "verified": true,
+   "checked": "2026-11-17"
+  },
+  {
+   "group": "USUM",
+   "species": 696,
+   "location_contains": "Route 8",
+   "versions": [
+    "UM"
+   ],
+   "set": {
+    "note": "Fossil sold only in the other version; here it comes from Rare-Treasure Hunting on Isle Aphun in Poké Pelago"
+   },
+   "verified": true,
+   "checked": "2026-11-17"
+  },
+  {
+   "group": "USUM",
+   "species": 140,
+   "location_contains": "Route 8",
+   "versions": [
+    "US"
+   ],
+   "set": {
+    "note": "Fossil sold only in the other version; here it comes from Rare-Treasure Hunting on Isle Aphun in Poké Pelago"
+   },
+   "verified": true,
+   "checked": "2026-11-17"
+  },
+  {
+   "group": "USUM",
+   "species": 345,
+   "location_contains": "Route 8",
+   "versions": [
+    "US"
+   ],
+   "set": {
+    "note": "Fossil sold only in the other version; here it comes from Rare-Treasure Hunting on Isle Aphun in Poké Pelago"
+   },
+   "verified": true,
+   "checked": "2026-11-17"
+  },
+  {
+   "group": "USUM",
+   "species": 410,
+   "location_contains": "Route 8",
+   "versions": [
+    "US"
+   ],
+   "set": {
+    "note": "Fossil sold only in the other version; here it comes from Rare-Treasure Hunting on Isle Aphun in Poké Pelago"
+   },
+   "verified": true,
+   "checked": "2026-11-17"
+  },
+  {
+   "group": "USUM",
+   "species": 566,
+   "location_contains": "Route 8",
+   "versions": [
+    "US"
+   ],
+   "set": {
+    "note": "Fossil sold only in the other version; here it comes from Rare-Treasure Hunting on Isle Aphun in Poké Pelago"
+   },
+   "verified": true,
+   "checked": "2026-11-17"
+  },
+  {
+   "group": "USUM",
+   "species": 698,
+   "location_contains": "Route 8",
+   "versions": [
+    "US"
+   ],
+   "set": {
+    "note": "Fossil sold only in the other version; here it comes from Rare-Treasure Hunting on Isle Aphun in Poké Pelago"
+   },
+   "verified": true,
+   "checked": "2026-11-17"
+  },
+  {
+   "group": "SM",
+   "species": 696,
+   "location_contains": "Route 8",
+   "set": {
+    "note": "The Jaw and Sail Fossils are not sold in Sun or Moon",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-17"
+  },
+  {
+   "group": "SM",
+   "species": 698,
+   "location_contains": "Route 8",
+   "set": {
+    "note": "The Jaw and Sail Fossils are not sold in Sun or Moon",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-17"
+  },
+  {
+   "group": "HGSS",
+   "species": 138,
+   "location_contains": "Pewter City",
+   "versions": [
+    "SS"
+   ],
+   "set": {
+    "note": "Its fossil is found only in the other version",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-17"
+  },
+  {
+   "group": "HGSS",
+   "species": 140,
+   "location_contains": "Pewter City",
+   "versions": [
+    "HG"
+   ],
+   "set": {
+    "note": "Its fossil is found only in the other version",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-17"
+  },
+  {
+   "group": "HGSS",
+   "species": 347,
+   "location_contains": "Pewter City",
+   "versions": [
+    "SS"
+   ],
+   "set": {
+    "note": "Its fossil is found only in the other version",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-17"
+  },
+  {
+   "group": "HGSS",
+   "species": 345,
+   "location_contains": "Pewter City",
+   "versions": [
+    "HG"
+   ],
+   "set": {
+    "note": "Its fossil is found only in the other version",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-17"
+  },
+  {
+   "group": "HGSS",
+   "species": 408,
+   "location_contains": "Pewter City",
+   "set": {
+    "note": "The Skull and Armor Fossils are not found in HeartGold or SoulSilver",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-17"
+  },
+  {
+   "group": "HGSS",
+   "species": 410,
+   "location_contains": "Pewter City",
+   "set": {
+    "note": "The Skull and Armor Fossils are not found in HeartGold or SoulSilver",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-17"
+  },
+  {
+   "group": "ORAS",
+   "species": 140,
+   "location_contains": "Rustboro City",
+   "versions": [
+    "AS"
+   ],
+   "set": {
+    "note": "Its fossil is found only in the other version",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-17"
+  },
+  {
+   "group": "ORAS",
+   "species": 410,
+   "location_contains": "Rustboro City",
+   "versions": [
+    "AS"
+   ],
+   "set": {
+    "note": "Its fossil is found only in the other version",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-17"
+  },
+  {
+   "group": "ORAS",
+   "species": 566,
+   "location_contains": "Rustboro City",
+   "versions": [
+    "AS"
+   ],
+   "set": {
+    "note": "Its fossil is found only in the other version",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-17"
+  },
+  {
+   "group": "ORAS",
+   "species": 138,
+   "location_contains": "Rustboro City",
+   "versions": [
+    "OR"
+   ],
+   "set": {
+    "note": "Its fossil is found only in the other version",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-17"
+  },
+  {
+   "group": "ORAS",
+   "species": 408,
+   "location_contains": "Rustboro City",
+   "versions": [
+    "OR"
+   ],
+   "set": {
+    "note": "Its fossil is found only in the other version",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-17"
+  },
+  {
+   "group": "ORAS",
+   "species": 564,
+   "location_contains": "Rustboro City",
+   "versions": [
+    "OR"
+   ],
+   "set": {
+    "note": "Its fossil is found only in the other version",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-17"
+  },
+  {
+   "group": "ORAS",
+   "species": 696,
+   "location_contains": "Rustboro City",
+   "set": {
+    "note": "The Jaw and Sail Fossils are not found in Omega Ruby or Alpha Sapphire",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-17"
+  },
+  {
+   "group": "ORAS",
+   "species": 698,
+   "location_contains": "Rustboro City",
+   "set": {
+    "note": "The Jaw and Sail Fossils are not found in Omega Ruby or Alpha Sapphire",
+    "needs_other_game": true
+   },
+   "verified": true,
+   "checked": "2026-11-17"
+  },
+  {
+   "group": "ORAS",
+   "species": 345,
+   "location_contains": "Rustboro City",
+   "set": {
+    "note": "Route 111 desert: take the Root or the Claw Fossil; the other sinks into the sand"
+   },
+   "verified": true,
+   "checked": "2026-11-17"
+  },
+  {
+   "group": "ORAS",
+   "species": 347,
+   "location_contains": "Rustboro City",
+   "set": {
+    "note": "Route 111 desert: take the Root or the Claw Fossil; the other sinks into the sand"
+   },
+   "verified": true,
+   "checked": "2026-11-17"
+  },
+  {
+   "group": "HGSS",
+   "species": 173,
+   "location_contains": "Pokéwalker",
+   "set": {
+    "ended": true,
+    "note": "Only on the Amity Meadow Pokéwalker course, unlocked by a distribution event"
+   },
+   "verified": true,
+   "checked": "2026-11-17"
+  },
+  {
+   "group": "HGSS",
+   "species": 174,
+   "location_contains": "Pokéwalker",
+   "set": {
+    "ended": true,
+    "note": "Only on the Amity Meadow Pokéwalker course, unlocked by a distribution event"
+   },
+   "verified": true,
+   "checked": "2026-11-17"
+  },
+  {
+   "group": "HGSS",
+   "species": 440,
+   "location_contains": "Pokéwalker",
+   "set": {
+    "ended": true,
+    "note": "Only on the Amity Meadow Pokéwalker course, unlocked by a distribution event"
+   },
+   "verified": true,
+   "checked": "2026-11-17"
+  },
+  {
+   "group": "HGSS",
+   "species": 355,
+   "location_contains": "Pokéwalker",
+   "set": {
+    "ended": true,
+    "note": "Only on the Winner's Path Pokéwalker course, unlocked by a distribution event"
+   },
+   "verified": true,
+   "checked": "2026-11-17"
+  },
+  {
+   "group": "HGSS",
+   "species": 374,
+   "location_contains": "Pokéwalker",
+   "set": {
+    "ended": true,
+    "note": "Only on the Winner's Path Pokéwalker course, unlocked by a distribution event"
+   },
+   "verified": true,
+   "checked": "2026-11-17"
+  },
+  {
+   "group": "HGSS",
+   "species": 441,
+   "location_contains": "Pokéwalker",
+   "set": {
+    "ended": true,
+    "note": "Only on the Rally Pokéwalker course, unlocked by a distribution event"
+   },
+   "verified": true,
+   "checked": "2026-11-18"
+  },
+  {
+   "group": "HGSS",
+   "species": 302,
+   "location_contains": "Pokéwalker",
+   "set": {
+    "ended": true,
+    "note": "Only on the Rally Pokéwalker course, unlocked by a distribution event"
+   },
+   "verified": true,
+   "checked": "2026-11-18"
+  },
+  {
+   "group": "HGSS",
+   "species": 453,
+   "location_contains": "Pokéwalker",
+   "set": {
+    "ended": true,
+    "note": "Only on the Rally Pokéwalker course, unlocked by a distribution event"
+   },
+   "verified": true,
+   "checked": "2026-11-18"
+  },
+  {
+   "group": "HGSS",
+   "species": 427,
+   "location_contains": "Pokéwalker",
+   "set": {
+    "ended": true,
+    "note": "Only on the Rally Pokéwalker course, unlocked by a distribution event"
+   },
+   "verified": true,
+   "checked": "2026-11-18"
+  },
+  {
+   "group": "HGSS",
+   "species": 133,
+   "location_contains": "Pokéwalker",
+   "set": {
+    "ended": true,
+    "note": "Only on the Sightseeing Pokéwalker course, unlocked by a distribution event"
+   },
+   "verified": true,
+   "checked": "2026-11-18"
+  },
+  {
+   "group": "HGSS",
+   "species": 255,
+   "location_contains": "Pokéwalker",
+   "set": {
+    "ended": true,
+    "note": "Only on the Sightseeing Pokéwalker course, unlocked by a distribution event"
+   },
+   "verified": true,
+   "checked": "2026-11-18"
+  },
+  {
+   "group": "HGSS",
+   "species": 61,
+   "location_contains": "Pokéwalker",
+   "set": {
+    "ended": true,
+    "note": "Only on the Sightseeing Pokéwalker course, unlocked by a distribution event"
+   },
+   "verified": true,
+   "checked": "2026-11-18"
+  },
+  {
+   "group": "HGSS",
+   "species": 279,
+   "location_contains": "Pokéwalker",
+   "set": {
+    "ended": true,
+    "note": "Only on the Sightseeing Pokéwalker course, unlocked by a distribution event"
+   },
+   "verified": true,
+   "checked": "2026-11-18"
+  },
+  {
+   "group": "HGSS",
+   "species": 52,
+   "location_contains": "Pokéwalker",
+   "set": {
+    "ended": true,
+    "note": "Only on the Sightseeing Pokéwalker course, unlocked by a distribution event"
+   },
+   "verified": true,
+   "checked": "2026-11-18"
+  },
+  {
+   "group": "HGSS",
+   "species": 224,
+   "location_contains": "Pokéwalker",
+   "set": {
+    "ended": true,
+    "note": "Only on the Beyond the Sea Pokéwalker course, unlocked by an international GTS trade; the Gen 4 GTS shut down in 2014"
+   },
+   "verified": true,
+   "checked": "2026-11-18"
+  },
+  {
+   "group": "HGSS",
+   "species": 222,
+   "location_contains": "Pokéwalker",
+   "set": {
+    "ended": true,
+    "note": "Only on the Beyond the Sea Pokéwalker course, unlocked by an international GTS trade; the Gen 4 GTS shut down in 2014"
+   },
+   "verified": true,
+   "checked": "2026-11-18"
+  }
+ ]
+}

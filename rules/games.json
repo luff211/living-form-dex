@@ -1,0 +1,442 @@
+{
+ "groups": [
+  {
+   "id": "RBY",
+   "label": "Red / Blue / Yellow",
+   "blank": "PK1",
+   "personal": "RB",
+   "versions": [
+    {
+     "code": "RD",
+     "label": "Red",
+     "mark": "R"
+    },
+    {
+     "code": "GN",
+     "label": "Blue",
+     "mark": "B"
+    },
+    {
+     "code": "YW",
+     "label": "Yellow",
+     "mark": "Y"
+    }
+   ],
+   "home_route": {
+    "text": "3DS Virtual Console → Poké Transporter → Pokémon Bank → HOME; Bank and Poké Transporter shut down on 26 February 2027 (12:00 JST) and can no longer be downloaded, so this route needs them already installed",
+    "verified": true,
+    "checked": "2026-11-16"
+   }
+  },
+  {
+   "id": "GSC",
+   "label": "Gold / Silver / Crystal",
+   "blank": "PK2",
+   "personal": "C",
+   "versions": [
+    {
+     "code": "GD",
+     "label": "Gold",
+     "mark": "G"
+    },
+    {
+     "code": "SI",
+     "label": "Silver",
+     "mark": "S"
+    },
+    {
+     "code": "C",
+     "label": "Crystal",
+     "mark": "C"
+    }
+   ],
+   "home_route": {
+    "text": "3DS Virtual Console → Poké Transporter → Pokémon Bank → HOME; Bank and Poké Transporter shut down on 26 February 2027 (12:00 JST) and can no longer be downloaded, so this route needs them already installed",
+    "verified": true,
+    "checked": "2026-11-16"
+   }
+  },
+  {
+   "id": "RSE",
+   "label": "Ruby / Sapphire / Emerald",
+   "blank": "PK3",
+   "personal": "E",
+   "versions": [
+    {
+     "code": "R",
+     "label": "Ruby",
+     "mark": "R"
+    },
+    {
+     "code": "S",
+     "label": "Sapphire",
+     "mark": "S"
+    },
+    {
+     "code": "E",
+     "label": "Emerald",
+     "mark": "E"
+    }
+   ],
+   "home_route": {
+    "text": "Pal Park (into a generation 4 DS game) → Poké Transfer (into a generation 5 DS game) → Poké Transporter → Pokémon Bank → HOME; Bank and Poké Transporter shut down on 26 February 2027 (12:00 JST) and can no longer be downloaded, so this route needs them already installed",
+    "verified": true,
+    "checked": "2026-11-16"
+   }
+  },
+  {
+   "id": "FRLG",
+   "label": "FireRed / LeafGreen",
+   "blank": "PK3",
+   "personal": "FR",
+   "versions": [
+    {
+     "code": "FR",
+     "label": "FireRed",
+     "mark": "FR"
+    },
+    {
+     "code": "LG",
+     "label": "LeafGreen",
+     "mark": "LG"
+    }
+   ],
+   "home_route": {
+    "text": "Switch release → Pokémon HOME (version 4.1.0 or later); one way, nothing comes back",
+    "verified": true,
+    "checked": "2026-11-16"
+   }
+  },
+  {
+   "id": "DPPt",
+   "label": "Diamond / Pearl / Platinum",
+   "blank": "PK4",
+   "personal": "Pt",
+   "versions": [
+    {
+     "code": "D",
+     "label": "Diamond",
+     "mark": "D"
+    },
+    {
+     "code": "P",
+     "label": "Pearl",
+     "mark": "P"
+    },
+    {
+     "code": "Pt",
+     "label": "Platinum",
+     "mark": "Pt"
+    }
+   ],
+   "home_route": {
+    "text": "Poké Transfer (into a generation 5 DS game) → Poké Transporter → Pokémon Bank → HOME; Bank and Poké Transporter shut down on 26 February 2027 (12:00 JST) and can no longer be downloaded, so this route needs them already installed",
+    "verified": true,
+    "checked": "2026-11-16"
+   }
+  },
+  {
+   "id": "HGSS",
+   "label": "HeartGold / SoulSilver",
+   "blank": "PK4",
+   "personal": "HGSS",
+   "versions": [
+    {
+     "code": "HG",
+     "label": "HeartGold",
+     "mark": "HG"
+    },
+    {
+     "code": "SS",
+     "label": "SoulSilver",
+     "mark": "SS"
+    }
+   ],
+   "home_route": {
+    "text": "Poké Transfer (into a generation 5 DS game) → Poké Transporter → Pokémon Bank → HOME; Bank and Poké Transporter shut down on 26 February 2027 (12:00 JST) and can no longer be downloaded, so this route needs them already installed",
+    "verified": true,
+    "checked": "2026-11-16"
+   }
+  },
+  {
+   "id": "BW",
+   "label": "Black / White",
+   "blank": "PK5",
+   "personal": "BW",
+   "versions": [
+    {
+     "code": "B",
+     "label": "Black",
+     "mark": "B"
+    },
+    {
+     "code": "W",
+     "label": "White",
+     "mark": "W"
+    }
+   ],
+   "home_route": {
+    "text": "Poké Transporter (Nintendo 3DS) → Pokémon Bank → HOME; Bank and Poké Transporter shut down on 26 February 2027 (12:00 JST) and can no longer be downloaded, so this route needs them already installed",
+    "verified": true,
+    "checked": "2026-11-16"
+   }
+  },
+  {
+   "id": "B2W2",
+   "label": "Black 2 / White 2",
+   "blank": "PK5",
+   "personal": "B2W2",
+   "versions": [
+    {
+     "code": "B2",
+     "label": "Black 2",
+     "mark": "B2"
+    },
+    {
+     "code": "W2",
+     "label": "White 2",
+     "mark": "W2"
+    }
+   ],
+   "home_route": {
+    "text": "Poké Transporter (Nintendo 3DS) → Pokémon Bank → HOME; Bank and Poké Transporter shut down on 26 February 2027 (12:00 JST) and can no longer be downloaded, so this route needs them already installed",
+    "verified": true,
+    "checked": "2026-11-16"
+   }
+  },
+  {
+   "id": "XY",
+   "label": "X / Y",
+   "blank": "PK6",
+   "personal": "XY",
+   "versions": [
+    {
+     "code": "X",
+     "label": "X",
+     "mark": "X"
+    },
+    {
+     "code": "Y",
+     "label": "Y",
+     "mark": "Y"
+    }
+   ],
+   "home_route": {
+    "text": "Pokémon Bank (Nintendo 3DS) → HOME; Bank and Poké Transporter shut down on 26 February 2027 (12:00 JST) and can no longer be downloaded, so this route needs them already installed",
+    "verified": true,
+    "checked": "2026-11-16"
+   }
+  },
+  {
+   "id": "ORAS",
+   "label": "Omega Ruby / Alpha Sapphire",
+   "blank": "PK6",
+   "personal": "AO",
+   "versions": [
+    {
+     "code": "OR",
+     "label": "Omega Ruby",
+     "mark": "OR"
+    },
+    {
+     "code": "AS",
+     "label": "Alpha Sapphire",
+     "mark": "AS"
+    }
+   ],
+   "home_route": {
+    "text": "Pokémon Bank (Nintendo 3DS) → HOME; Bank and Poké Transporter shut down on 26 February 2027 (12:00 JST) and can no longer be downloaded, so this route needs them already installed",
+    "verified": true,
+    "checked": "2026-11-16"
+   }
+  },
+  {
+   "id": "SM",
+   "label": "Sun / Moon",
+   "blank": "PK7",
+   "personal": "SM",
+   "versions": [
+    {
+     "code": "SN",
+     "label": "Sun",
+     "mark": "S"
+    },
+    {
+     "code": "MN",
+     "label": "Moon",
+     "mark": "M"
+    }
+   ],
+   "home_route": {
+    "text": "Pokémon Bank (Nintendo 3DS) → HOME; Bank and Poké Transporter shut down on 26 February 2027 (12:00 JST) and can no longer be downloaded, so this route needs them already installed",
+    "verified": true,
+    "checked": "2026-11-16"
+   }
+  },
+  {
+   "id": "USUM",
+   "label": "Ultra Sun / Ultra Moon",
+   "blank": "PK7",
+   "personal": "USUM",
+   "versions": [
+    {
+     "code": "US",
+     "label": "Ultra Sun",
+     "mark": "US"
+    },
+    {
+     "code": "UM",
+     "label": "Ultra Moon",
+     "mark": "UM"
+    }
+   ],
+   "home_route": {
+    "text": "Pokémon Bank (Nintendo 3DS) → HOME; Bank and Poké Transporter shut down on 26 February 2027 (12:00 JST) and can no longer be downloaded, so this route needs them already installed",
+    "verified": true,
+    "checked": "2026-11-16"
+   }
+  },
+  {
+   "id": "LGPE",
+   "label": "Let's Go Pikachu / Eevee",
+   "blank": "PB7",
+   "personal": "GG",
+   "versions": [
+    {
+     "code": "GP",
+     "label": "Let's Go Pikachu",
+     "mark": "P"
+    },
+    {
+     "code": "GE",
+     "label": "Let's Go Eevee",
+     "mark": "E"
+    }
+   ],
+   "home_route": {
+    "text": "Connect to HOME directly from the game (Nintendo Switch)",
+    "verified": true,
+    "checked": "2026-11-16"
+   }
+  },
+  {
+   "id": "SwSh",
+   "label": "Sword / Shield",
+   "blank": "PK8",
+   "personal": "SWSH",
+   "versions": [
+    {
+     "code": "SW",
+     "label": "Sword",
+     "mark": "Sw"
+    },
+    {
+     "code": "SH",
+     "label": "Shield",
+     "mark": "Sh"
+    }
+   ],
+   "home_route": {
+    "text": "Connect to HOME directly from the game (Nintendo Switch)",
+    "verified": true,
+    "checked": "2026-11-16"
+   }
+  },
+  {
+   "id": "BDSP",
+   "label": "Brilliant Diamond / Shining Pearl",
+   "blank": "PB8",
+   "personal": "BDSP",
+   "versions": [
+    {
+     "code": "BD",
+     "label": "Brilliant Diamond",
+     "mark": "BD"
+    },
+    {
+     "code": "SP",
+     "label": "Shining Pearl",
+     "mark": "SP"
+    }
+   ],
+   "home_route": {
+    "text": "Connect to HOME directly from the game (Nintendo Switch)",
+    "verified": true,
+    "checked": "2026-11-16"
+   }
+  },
+  {
+   "id": "PLA",
+   "label": "Legends: Arceus",
+   "blank": "PA8",
+   "personal": "LA",
+   "versions": [
+    {
+     "code": "PLA",
+     "label": "Legends: Arceus",
+     "mark": "PLA"
+    }
+   ],
+   "home_route": {
+    "text": "Connect to HOME directly from the game (Nintendo Switch)",
+    "verified": true,
+    "checked": "2026-11-16"
+   }
+  },
+  {
+   "id": "SV",
+   "label": "Scarlet / Violet",
+   "blank": "PK9",
+   "personal": "SV",
+   "versions": [
+    {
+     "code": "SL",
+     "label": "Scarlet",
+     "mark": "S"
+    },
+    {
+     "code": "VL",
+     "label": "Violet",
+     "mark": "V"
+    }
+   ],
+   "home_route": {
+    "text": "Connect to HOME directly from the game (Nintendo Switch)",
+    "verified": true,
+    "checked": "2026-11-16"
+   }
+  },
+  {
+   "id": "ZA",
+   "label": "Legends: Z-A",
+   "blank": "PA9",
+   "personal": "ZA",
+   "versions": [
+    {
+     "code": "ZA",
+     "label": "Legends: Z-A",
+     "mark": "ZA"
+    }
+   ],
+   "home_route": {
+    "text": "Connect to HOME directly from the game (Nintendo Switch)",
+    "verified": true,
+    "checked": "2026-11-16"
+   }
+  },
+  {
+   "id": "GO",
+   "label": "Pokémon GO",
+   "blank": "PK9",
+   "personal": "SV",
+   "versions": [
+    {
+     "code": "GO",
+     "label": "Pokémon GO",
+     "mark": "GO"
+    }
+   ],
+   "other": true
+  }
+ ]
+}

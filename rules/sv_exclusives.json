@@ -1,0 +1,424 @@
+{
+ "entries": [
+  {
+   "species": 246,
+   "form": null,
+   "version": "SL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 247,
+   "form": null,
+   "version": "SL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 248,
+   "form": null,
+   "version": "SL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 425,
+   "form": null,
+   "version": "SL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 426,
+   "form": null,
+   "version": "SL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 434,
+   "form": null,
+   "version": "SL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 435,
+   "form": null,
+   "version": "SL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 633,
+   "form": null,
+   "version": "SL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 634,
+   "form": null,
+   "version": "SL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 635,
+   "form": null,
+   "version": "SL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 690,
+   "form": null,
+   "version": "SL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 691,
+   "form": null,
+   "version": "SL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 874,
+   "form": null,
+   "version": "SL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 936,
+   "form": null,
+   "version": "SL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 984,
+   "form": null,
+   "version": "SL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 985,
+   "form": null,
+   "version": "SL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 986,
+   "form": null,
+   "version": "SL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 987,
+   "form": null,
+   "version": "SL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 988,
+   "form": null,
+   "version": "SL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 989,
+   "form": null,
+   "version": "SL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 1005,
+   "form": null,
+   "version": "SL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 371,
+   "form": null,
+   "version": "VL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 372,
+   "form": null,
+   "version": "VL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 373,
+   "form": null,
+   "version": "VL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 200,
+   "form": null,
+   "version": "VL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 429,
+   "form": null,
+   "version": "VL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 316,
+   "form": null,
+   "version": "VL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 317,
+   "form": null,
+   "version": "VL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 885,
+   "form": null,
+   "version": "VL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 886,
+   "form": null,
+   "version": "VL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 887,
+   "form": null,
+   "version": "VL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 692,
+   "form": null,
+   "version": "VL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 693,
+   "form": null,
+   "version": "VL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 875,
+   "form": null,
+   "version": "VL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 937,
+   "form": null,
+   "version": "VL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 990,
+   "form": null,
+   "version": "VL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 991,
+   "form": null,
+   "version": "VL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 992,
+   "form": null,
+   "version": "VL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 993,
+   "form": null,
+   "version": "VL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 994,
+   "form": null,
+   "version": "VL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 995,
+   "form": null,
+   "version": "VL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 1006,
+   "form": null,
+   "version": "VL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 128,
+   "form": 2,
+   "version": "SL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 128,
+   "form": 3,
+   "version": "VL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 765,
+   "form": null,
+   "version": "SL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 207,
+   "form": null,
+   "version": "SL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 472,
+   "form": null,
+   "version": "SL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 845,
+   "form": null,
+   "version": "SL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 408,
+   "form": null,
+   "version": "SL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 409,
+   "form": null,
+   "version": "SL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 37,
+   "form": 1,
+   "version": "SL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 38,
+   "form": 1,
+   "version": "SL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 766,
+   "form": null,
+   "version": "VL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 190,
+   "form": null,
+   "version": "VL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 424,
+   "form": null,
+   "version": "VL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 877,
+   "form": null,
+   "version": "VL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 410,
+   "form": null,
+   "version": "VL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 411,
+   "form": null,
+   "version": "VL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 27,
+   "form": 1,
+   "version": "VL",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "species": 28,
+   "form": 1,
+   "version": "VL",
+   "verified": true,
+   "checked": "2026-11-16"
+  }
+ ]
+}

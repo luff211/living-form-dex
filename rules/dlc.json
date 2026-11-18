@@ -1,0 +1,236 @@
+{
+ "entries": [
+  {
+   "group": "SwSh",
+   "dlc": "Isle of Armor",
+   "locations": [
+    "Master Dojo"
+   ],
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "SwSh",
+   "dlc": "Crown Tundra",
+   "locations": [
+    "Max Lair",
+    "Split-Decision Ruins",
+    "Iceberg Ruins",
+    "Iron Ruins",
+    "Rock Peak Ruins"
+   ],
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "SV",
+   "dlc": "The Teal Mask",
+   "locations": [
+    "Kitakami Road",
+    "Kitakami Wilds (1)",
+    "Kitakami Hall",
+    "Mossui Town",
+    "Apple Hills",
+    "Reveler’s Road",
+    "Oni Mountain (1)",
+    "Oni’s Maw",
+    "Infernal Pass",
+    "Crystal Pool (1)",
+    "Chilling Waterhead",
+    "Timeless Woods",
+    "Wistful Fields",
+    "Paradise Barrens",
+    "Fellhorn Gorge",
+    "Mossfell Confluence",
+    "Loyalty Plaza",
+    "Dreaded Den"
+   ],
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "SV",
+   "dlc": "The Indigo Disk",
+   "locations": [
+    "Savanna Biome",
+    "Coastal Biome",
+    "Canyon Biome",
+    "Polar Biome",
+    "Central Plaza",
+    "Savanna Plaza",
+    "Coastal Plaza",
+    "Polar Plaza",
+    "Chargestone Cavern",
+    "Torchlit Labyrinth",
+    "Area Zero Underdepths (1)",
+    "Area Zero Underdepths (2)"
+   ],
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "ZA",
+   "dlc": "Mega Dimension",
+   "locations": [
+    "Hyperspace Lumiose",
+    "Hyperspace Lumiose (-)",
+    "Hyperspace Desolate Land",
+    "Hyperspace Disaster Arena",
+    "Hyperspace Hunting Grounds",
+    "Hyperspace Infernal Arena",
+    "Hyperspace Newmoon Nightmare",
+    "Hyperspace Primordial Sea",
+    "Hyperspace Second-Sight Arena",
+    "Hyperspace Sky Pillar",
+    "Hyperspace Sushi Paradise"
+   ],
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "SV",
+   "dlc": "The Indigo Disk",
+   "method": "Static",
+   "species": [
+    144,
+    145,
+    146,
+    243,
+    244,
+    245,
+    249,
+    250,
+    380,
+    381,
+    382,
+    383,
+    384,
+    638,
+    639,
+    640,
+    643,
+    644,
+    646,
+    791,
+    792,
+    800,
+    891,
+    896,
+    897,
+    1020,
+    1021,
+    1022,
+    1023
+   ],
+   "note": "Snacksworth's legendaries and the Area Zero paradox Pokémon only appear after The Indigo Disk",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "SV",
+   "dlc": "The Indigo Disk",
+   "method": "Evolve",
+   "species": [
+    1018,
+    1019
+   ],
+   "note": "Hydrapple needs Dipplin to know Dragon Cheer",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "SV",
+   "dlc": "The Teal Mask",
+   "method": "Evolve",
+   "species": [
+    1013,
+    1011
+   ],
+   "note": "Sinistcha needs a teacup found in Kitakami",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "SwSh",
+   "dlc": "Isle of Armor",
+   "method": "Evolve",
+   "species": [
+    80
+   ],
+   "form": 2,
+   "note": "Galarica Cuff needs Galarica Twigs from the Isle of Armor",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "SwSh",
+   "dlc": "Crown Tundra",
+   "method": "Evolve",
+   "species": [
+    199
+   ],
+   "form": 1,
+   "note": "The Galarica Wreath is woven in the Crown Tundra from 15 Galarica Twigs",
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "SV",
+   "dlc": "The Indigo Disk",
+   "method": "In-game trade",
+   "species": [
+    52,
+    81,
+    128,
+    133,
+    192,
+    209,
+    227,
+    240,
+    307,
+    316,
+    415,
+    744,
+    747,
+    819,
+    840,
+    857,
+    884,
+    922,
+    955,
+    958,
+    969,
+    971,
+    974,
+    976,
+    982,
+    997,
+    999,
+    1012
+   ],
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "SV",
+   "dlc": "The Indigo Disk",
+   "method": "In-game trade",
+   "species": [
+    522
+   ],
+   "verified": true,
+   "checked": "2026-11-16"
+  },
+  {
+   "group": "SV",
+   "dlc": "The Indigo Disk",
+   "method": "In-game trade",
+   "species": [
+    194
+   ],
+   "form": 1,
+   "verified": true,
+   "checked": "2026-11-16"
+  }
+ ]
+}
