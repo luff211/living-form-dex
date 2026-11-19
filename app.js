@@ -1,6 +1,7 @@
 import {
   visibleGroups, entryOwned, summarize, versionMarks, rowAvailability, elsewhereLabels, rowMatches,
   STATE_KEY, emptyState, parseState, serializeState, orphanTicks, tickedCount, setTick, setOwned, latestState,
+  visibleRange,
 } from "./logic.js";
 
 const $ = id => document.getElementById(id);
@@ -68,10 +69,12 @@ let data;
 let owned = new Set();
 let hideTicked = false;
 let query = "";
-let view = null;          // {groups, sharedDex, tbody, end, rows (filtered), shown}
-let observer = null;
+// Only the rows near the viewport are in the DOM; spacer rows stand in for the rest.
+// view: {groups, sharedDex, thead, tbody, top, bottom, rows (filtered), trs: Map id→tr, heights: Map id→px}
+let view = null;
 let importError = "";
-const CHUNK = 50;
+const OVERSCAN = 800;     // px rendered above and below the viewport
+let measuredSum = 0, measuredCount = 0;
 
 function showMessages() {
   const box = $("messages");
@@ -126,13 +129,14 @@ function entriesCell(entries, group) {
       list.replaceChildren(...(open ? entries : shown).map(e => entryNode(e, group)));
       btn.setAttribute("aria-expanded", String(open));
       btn.textContent = open ? "Show fewer" : `+${more}`;
+      schedule();
     });
   }
   return td;
 }
 
 function flagCell(text, unverified) {
-  const td = el("td", {class: text === "–" ? "flag" : ""}, text);
+  const td = el("td", {class: text === "–" ? "fl flag" : "fl"}, text);
   if (unverified) td.append(" ", el("span", {class: "tag unv", title: UNVERIFIED_TITLE, text: "unverified"}));
   return td;
 }
@@ -144,6 +148,8 @@ function rowNode(row, groups, sharedDex, ticked) {
   box.dataset.id = row.id;
 
   const name = el("th", {scope: "row", class: "p2"}, row.name);
+  // narrow screens unpin the Form column, so the form also shows under the name
+  if (label) name.append(el("span", {class: "formline", text: label}));
   const avail = rowAvailability(row, data.groups, owned);
   if (avail === "none") name.append(el("span", {class: "avail", text: "Not currently obtainable"}));
   else if (avail === "elsewhere" && owned.size > 0)
@@ -168,7 +174,7 @@ function headerRow(groups) {
   const th = (text, cls, ...extra) => el("th", {scope: "col", class: cls, text}, ...extra);
   return el("tr", {},
     el("th", {scope: "col", class: "p0", "aria-label": "Caught"}, "✓"),
-    th("#", "p1"), th("Name", "p2"), th("Form", "p3"), th("Mega", ""), th("Gmax", ""),
+    th("#", "p1"), th("Name", "p2"), th("Form", "p3"), th("Mega", "fl"), th("Gmax", "fl"),
     ...groups.map(g => {
       const route = el("span", {class: "route", text: g.home_route});
       if (g.home_route_unverified) route.append(" ", el("span", {class: "tag unv", title: UNVERIFIED_TITLE, text: "unverified"}));
@@ -189,18 +195,21 @@ function render() {
     const id = ev.target.dataset?.id;
     if (!id) return;
     commit(s => setTick(s, id, ev.target.checked));
-    const tr = ev.target.closest("tr");
-    tr.classList.toggle("ticked", ev.target.checked);
-    if (hideTicked && ev.target.checked) tr.hidden = true;
+    ev.target.closest("tr").classList.toggle("ticked", ev.target.checked);
+    if (hideTicked && ev.target.checked) {
+      view.rows = view.rows.filter(r => r.id !== id);
+      view.trs.delete(id);
+      ev.target.closest("tr").remove();
+      update();
+    }
     showCount();
     showMessages();
   });
-  const end = el("div", {class: "rows-end"});
-  $("main").replaceChildren(el("table", {}, el("thead", {}, headerRow(groups)), tbody), end);
-  view = {groups, sharedDex, tbody, end, rows: [], shown: 0};
-  observer?.disconnect();
-  observer = new IntersectionObserver(es => { if (es.some(e => e.isIntersecting)) renderMore(); },
-    {root: $("main"), rootMargin: "0px 0px 1500px 0px"});
+  const spacer = () => el("tr", {class: "spacer", "aria-hidden": "true"}, el("td", {colspan: String(groups.length + 7)}));
+  const thead = el("thead", {}, headerRow(groups));
+  view = {groups, sharedDex, thead, tbody, top: spacer(), bottom: spacer(), rows: [], trs: new Map(), heights: new Map()};
+  measuredSum = measuredCount = 0;
+  $("main").replaceChildren(el("table", {}, thead, tbody));
   applyFilter();
   showCount();
   showMessages();
@@ -209,21 +218,63 @@ function render() {
 function applyFilter() {
   const ticked = new Set(state.ticks);
   view.rows = data.rows.filter(row => !(hideTicked && ticked.has(row.id)) && rowMatches(row, query));
-  view.shown = 0;
-  view.tbody.replaceChildren();
+  view.trs = new Map();
+  view.tbody.replaceChildren(view.top, view.bottom);
   $("main").scrollTop = 0;
-  renderMore();
+  update();
 }
 
-// Rows are built as the reader scrolls near the end: building all of them at once (115k nodes) made the page lag.
-function renderMore() {
+let pending = false;
+function schedule() {
+  if (pending) return;
+  pending = true;
+  requestAnimationFrame(() => { pending = false; update(); });
+}
+
+// Put the rows overlapping the viewport (plus OVERSCAN) in the DOM, size the spacers for the rest,
+// then measure what was rendered. Unmeasured rows use the average measured height.
+function update() {
+  if (!view) return;
+  const main = $("main");
+  const est = measuredCount ? measuredSum / measuredCount : 60;
+  const heights = view.rows.map(r => view.heights.get(r.id) ?? est);
+  const top = main.scrollTop - view.thead.offsetHeight;
+  const {start, end, before, after} = visibleRange(heights, top - OVERSCAN, top + main.clientHeight + OVERSCAN);
+  const firstSeen = visibleRange(heights, top, top + 1).start;
+
   const ticked = new Set(state.ticks);
-  const next = view.rows.slice(view.shown, view.shown + CHUNK);
-  view.tbody.append(...next.map(row => rowNode(row, view.groups, view.sharedDex, ticked)));
-  view.shown += next.length;
-  // observing again fires the callback again if the end marker is still in range after this chunk
-  observer.unobserve(view.end);
-  if (view.shown < view.rows.length) observer.observe(view.end);
+  const trs = new Map();
+  for (let i = start; i < end; i++) {
+    const row = view.rows[i];
+    trs.set(row.id, view.trs.get(row.id) ?? rowNode(row, view.groups, view.sharedDex, ticked));
+  }
+  for (const [id, tr] of view.trs) if (!trs.has(id)) tr.remove();
+  // rows kept from the last update are already in order; only new ones move (keeps focus on kept rows)
+  let prev = view.top;
+  for (const tr of trs.values()) {
+    if (prev.nextSibling !== tr) prev.after(tr);
+    prev = tr;
+  }
+  view.trs = trs;
+  view.top.firstChild.style.height = `${before}px`;
+  view.bottom.firstChild.style.height = `${after}px`;
+
+  // measure; rows above the first visible one that changed size would move the content, so scroll by the same amount
+  let shift = 0, changed = false, i = start;
+  for (const [id, tr] of trs) {
+    const h = tr.getBoundingClientRect().height;
+    const old = view.heights.get(id);
+    if (old === undefined) { measuredSum += h; measuredCount++; }
+    if (h !== old) view.heights.set(id, h);
+    if (h !== heights[i]) {
+      changed = true;
+      if (i < firstSeen) shift += h - heights[i];
+    }
+    i++;
+  }
+  if (shift) main.scrollTop += shift;
+  // estimates were off, so the rendered rows may not fill the band: go again (stops once every row is measured)
+  if (changed) schedule();
 }
 
 function buildOwnButtons() {
@@ -308,6 +359,13 @@ async function start() {
   buildOwnButtons();
   wireBar();
   render();
+  $("main").addEventListener("scroll", schedule, {passive: true});
+  // a new width rewraps the text, so measured heights are stale; height-only resizes (mobile address bar) are not
+  let width = window.innerWidth;
+  window.addEventListener("resize", () => {
+    if (window.innerWidth !== width && view) { width = window.innerWidth; view.heights.clear(); measuredSum = measuredCount = 0; }
+    schedule();
+  });
   // another tab saved: show its ticks and owned games here too
   window.addEventListener("storage", ev => {
     if (ev.key !== STATE_KEY || ev.newValue === null) return;

@@ -101,3 +101,14 @@ export const tickedCount = (state, rows) => {
   const ticked = new Set(state.ticks);
   return rows.filter(r => ticked.has(r.id)).length;
 };
+
+// Rows [start, end) that overlap the band [from, to) (px from the top of the first row), with the height above and below them.
+export function visibleRange(heights, from, to) {
+  let y = 0, i = 0;
+  while (i < heights.length && y + heights[i] <= from) y += heights[i++];
+  const start = i, before = y;
+  while (i < heights.length && y < to) y += heights[i++];
+  let after = 0;
+  for (let j = i; j < heights.length; j++) after += heights[j];
+  return {start, end: i, before, after};
+}
