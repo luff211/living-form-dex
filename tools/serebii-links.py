@@ -24,7 +24,8 @@ GROUP_PAGES: dict[str, list[tuple[str, str]]] = {
     "RSE": [("hoenn", "3rd")],
     "FRLG": [("kanto", "3rd")],
     "DPPt": [("sinnoh", "4th")],
-    "HGSS": [("johto", ""), ("kanto", "4th")],
+    # Routes 26-28 and Tohjo Falls are not in LGPE, so their kanto main page is the HGSS one
+    "HGSS": [("johto", ""), ("kanto", "4th"), ("kanto", "")],
     "BW": [("unova", "")],
     "B2W2": [("unova", "")],
     "XY": [("kalos", "")],
@@ -81,7 +82,17 @@ def norm(name: str) -> str:
 
 # dex place name -> Serebii's name for it, where they differ
 ALIASES = {"Silver Cave": "Mt. Silver", "Mt. Silver Cave": "Mt. Silver", "Team Rocket HQ": "Rocket Hideout",
-           "Ruin Maniac Cave": "Ruins Maniac's Cave"}
+           "Ruin Maniac Cave": "Ruins Maniac's Cave", "Mount Coronet": "Mt. Coronet",
+           "Aqua Hideout": "Aqua/Magma Hideout", "Team Aqua Hideout": "Aqua/Magma Hideout",
+           "Team Magma Hideout": "Magma Hideout", "Cold Storage/PWT": "Cold Storage",
+           "Team Flare Secret HQ": "Team Flare HQ", "Wedgehurst Station": "Wedgehurst",
+           "Motostoke Stadium": "Motostoke", "Area Zero Underdepths": "Area Zero",
+           "the Pokémon Research Lab": "Pokemon Research Lab",
+           # the lake caverns are on the lake pages
+           "Acuity Cavern": "Lake Acuity", "Valor Cavern": "Lake Valor", "Verity Cavern": "Lake Verity",
+           # the seven Tanoby chambers are on the Tanoby Ruins page
+           **{f"{c} Chamber": "Tanoby Ruins" for c in ("Monean", "Liptoo", "Weepth", "Dilford", "Scufib", "Rixy",
+                                                       "Viapois")}}
 
 
 def candidates(place: str) -> list[str]:
@@ -90,7 +101,9 @@ def candidates(place: str) -> list[str]:
     out = [place]
     name = place.split(";")[0].strip()
     while True:
-        for n in (name, ALIASES.get(name)):
+        # Z-A sectors, streets and plazas are on their district's page
+        district = re.sub(r"^(Bleu|Jaune|Magenta|Rouge|Vert) (Sector \d+|Street|Plaza)$", r"\1 District", name)
+        for n in (name, ALIASES.get(name), district):
             if n and n not in out:
                 out.append(n)
         cut = re.sub(r"\s*\([^()]*\)$", "", name)
