@@ -95,3 +95,12 @@ test("placeLink links only location places that the group has a link for", async
   assert.equal(placeLink({method: "Wild", place: "Route 7"}, null), null);
   assert.equal(placeLink({method: "Wild", place: "Route 7"}, {id: "X"}), null);
 });
+
+test("rowMatches ignores accents in name, form and query", async () => {
+  const {rowMatches} = await import("../logic.js");
+  const row = {dex: 666, name: "Vivillon", form: "Poké Ball"};
+  assert.ok(rowMatches(row, "vivillon poke ball"));
+  assert.ok(rowMatches(row, "POKÉ"));
+  assert.ok(rowMatches({dex: 669, name: "Flabébé", form: ""}, "flabebe"));
+  assert.ok(!rowMatches(row, "pokx"));
+});
