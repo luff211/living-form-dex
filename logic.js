@@ -16,11 +16,14 @@ export function versionMarks(entry, group) {
   return covered.length === group.versions.length ? [] : covered.map(v => v.mark);
 }
 
+// lower case without accents, so "poke" finds "Poké"
+const fold = s => s.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase();
+
 export function rowMatches(row, query) {
-  const q = String(query ?? "").trim().toLowerCase();
+  const q = fold(String(query ?? "").trim());
   if (!q) return true;
   if (/^\d+$/.test(q)) return row.dex === Number(q);
-  const hay = `${row.name} ${row.form}`.toLowerCase();
+  const hay = fold(`${row.name} ${row.form}`);
   return q.split(/\s+/).every(w => hay.includes(w));
 }
 
