@@ -39,6 +39,28 @@ class Rules(unittest.TestCase):
         with self.assertRaisesRegex(RulesError, r"gender_diff\.json.*also_forms"):
             load_rules(self.tmp)
 
+    def test_serebii_links_loaded(self):
+        (self.tmp / "serebii.json").write_text(json.dumps(
+            {"links": {"GSC": {"Route 7": "https://www.serebii.net/pokearth/kanto/2nd/route7.shtml"}}}), encoding="utf-8")
+        self.assertEqual(load_rules(self.tmp).serebii["GSC"]["Route 7"],
+                         "https://www.serebii.net/pokearth/kanto/2nd/route7.shtml")
+
+    def test_serebii_file_is_optional(self):
+        (self.tmp / "serebii.json").unlink(missing_ok=True)
+        self.assertEqual(load_rules(self.tmp).serebii, {})
+
+    def test_serebii_link_outside_pokearth_is_rejected(self):
+        (self.tmp / "serebii.json").write_text(json.dumps(
+            {"links": {"GSC": {"Route 7": "https://example.com/x"}}}), encoding="utf-8")
+        with self.assertRaises(RulesError):
+            load_rules(self.tmp)
+
+    def test_serebii_unknown_group_is_rejected(self):
+        (self.tmp / "serebii.json").write_text(json.dumps(
+            {"links": {"NOPE": {"Route 7": "https://www.serebii.net/pokearth/kanto/route7.shtml"}}}), encoding="utf-8")
+        with self.assertRaises(RulesError):
+            load_rules(self.tmp)
+
     def test_also_forms_loaded(self):
         self.assertIn((215, 1), load_rules(REPO / "rules").gender_diff_forms)
 

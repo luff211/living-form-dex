@@ -22,6 +22,7 @@ class Rules:
     no_source: set[tuple[int, int]] = field(default_factory=set)   # (species, form) rows known to have no source
     no_spread: set[tuple[int, int]] = field(default_factory=set)   # (species, form) never given "Form varies" or Evolve/Breed
     mega_forms: dict[int, list[int]] = field(default_factory=dict)   # species -> forms that have the Mega (default form 0)
+    serebii: dict[str, dict[str, str]] = field(default_factory=dict)   # group -> place -> PokéEarth URL
 
 
 def _read(rules_dir, name):
@@ -196,6 +197,18 @@ def load_rules(rules_dir: Path) -> Rules:
                                             for x in also),
              "gender_diff.json", "'also_forms' must be a list of [species, form] integer pairs")
 
+    serebii = {}
+    if (rules_dir / "serebii.json").exists():   # optional: written by tools/serebii-links.py
+        links = _read(rules_dir, "serebii.json").get("links")
+        _require(isinstance(links, dict), "serebii.json", "needs a 'links' object")
+        group_ids = set(versions_of)
+        for g, places in links.items():
+            _require(g in group_ids, f"serebii.json group {g!r}", "is not a group in games.json")
+            _require(isinstance(places, dict) and all(
+                isinstance(u, str) and u.startswith("https://www.serebii.net/pokearth/") for u in places.values()),
+                f"serebii.json group {g!r}", "must map place names to https://www.serebii.net/pokearth/ URLs")
+        serebii = links
+
     return Rules(
         games=games,
         forms=forms,
@@ -210,4 +223,5 @@ def load_rules(rules_dir: Path) -> Rules:
         no_source={(e["species"], e["form"]) for e in no_source["entries"]},
         no_spread={(e["species"], e["form"]) for e in no_spread["entries"]},
         mega_forms={e["species"]: e["forms"] for e in mega_forms["entries"]},
+        serebii=serebii,
     )

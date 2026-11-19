@@ -85,3 +85,13 @@ test("visibleRange picks the rows overlapping a band and the space around them",
   assert.deepEqual(visibleRange(h, 500, 900), {start: 4, end: 4, before: 40, after: 0});
   assert.deepEqual(visibleRange([], 0, 100), {start: 0, end: 0, before: 0, after: 0});
 });
+
+test("placeLink links only location places that the group has a link for", async () => {
+  const {placeLink} = await import("../logic.js");
+  const g = {id: "GSC", links: {"Route 7": "https://www.serebii.net/pokearth/kanto/2nd/route7.shtml"}};
+  assert.equal(placeLink({method: "Wild", place: "Route 7"}, g), "https://www.serebii.net/pokearth/kanto/2nd/route7.shtml");
+  assert.equal(placeLink({method: "Wild", place: "Route 8"}, g), null);
+  assert.equal(placeLink({method: "Evolve", place: "Route 7"}, g), null);
+  assert.equal(placeLink({method: "Wild", place: "Route 7"}, null), null);
+  assert.equal(placeLink({method: "Wild", place: "Route 7"}, {id: "X"}), null);
+});

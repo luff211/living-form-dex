@@ -128,3 +128,5 @@ td.expandable { cursor: pointer; }
   .formline { display: block; font-size: 11px; color: var(--muted); font-weight: 400; }
   td.game, th.game { width: 12.5em; min-width: 12.5em; max-width: 12.5em; }
 }
+.entry a { color: inherit; text-decoration: underline dotted; text-underline-offset: 2px; }
+.entry a:hover { text-decoration-style: solid; }

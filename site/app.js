@@ -1,7 +1,7 @@
 import {
   visibleGroups, entryOwned, summarize, versionMarks, rowAvailability, elsewhereLabels, rowMatches,
   STATE_KEY, emptyState, parseState, serializeState, orphanTicks, tickedCount, setTick, setOwned, latestState,
-  visibleRange,
+  visibleRange, placeLink,
 } from "./logic.js";
 
 const $ = id => document.getElementById(id);
@@ -99,7 +99,11 @@ function entryNode(entry, group) {
   if (entry.ended) node.classList.add("ended");
   if (entry.needs_other_game) node.classList.add("needs");
   if (!entryOwned(entry, owned)) node.classList.add("dim");
-  node.append(el("span", {class: "what", text: entry.place ? `${entry.method}: ${entry.place}` : entry.method}));
+  const url = placeLink(entry, group);
+  node.append(url
+    ? el("span", {class: "what"}, `${entry.method}: `,
+        el("a", {href: url, target: "_blank", rel: "noopener", title: "Open on Serebii PokéEarth", text: entry.place}))
+    : el("span", {class: "what", text: entry.place ? `${entry.method}: ${entry.place}` : entry.method}));
   if (entry.dlc) node.append(" ", el("span", {class: "dlc", text: `(${entry.dlc})`}));
   const marks = group ? versionMarks(entry, group) : [];
   if (marks.length) node.append(" ", el("span", {class: "marks", text: `[${marks.join(", ")}]`}));

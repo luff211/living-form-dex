@@ -132,6 +132,13 @@ class AssembleTests(unittest.TestCase):
         self.assertEqual(d["groups"][0]["home_route_unverified"], True)
         self.assertEqual(d["rows"][0]["cells"]["SwSh"][0]["versions"], ["SW"])
         self.assertEqual(d["meta"], {"pkhex": "1.2", "rows": 1})
+        self.assertEqual(d["groups"][0]["links"], {})
+
+    def test_to_json_carries_serebii_links_per_group(self):
+        rl = rules()
+        rl.serebii = {"SwSh": {"Route 1": "https://www.serebii.net/pokearth/galar/route1.shtml"}}
+        d = to_json([run({})], rl, {"pkhex": "1"})
+        self.assertEqual(d["groups"][1]["links"], {"Route 1": "https://www.serebii.net/pokearth/galar/route1.shtml"})
 
 
 if __name__ == "__main__":

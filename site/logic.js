@@ -112,3 +112,9 @@ export function visibleRange(heights, from, to) {
   for (let j = i; j < heights.length; j++) after += heights[j];
   return {start, end: i, before, after};
 }
+
+// Serebii PokéEarth page for an entry's place; Evolve and Breed places are Pokémon, not locations.
+export function placeLink(entry, group) {
+  if (!group?.links || entry.method === "Evolve" || entry.method === "Breed") return null;
+  return Object.hasOwn(group.links, entry.place) ? group.links[entry.place] : null;
+}
