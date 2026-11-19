@@ -68,8 +68,10 @@ let data;
 let owned = new Set();
 let hideTicked = false;
 let query = "";
-let rowViews = [];        // [{row, tr}] in data order
+let view = null;          // {groups, sharedDex, tbody, end, rows (filtered), shown}
+let observer = null;
 let importError = "";
+const CHUNK = 50;
 
 function showMessages() {
   const box = $("messages");
@@ -182,24 +184,23 @@ function render() {
   const counts = new Map();
   for (const r of data.rows) counts.set(r.dex, (counts.get(r.dex) ?? 0) + 1);
   const sharedDex = new Set([...counts].filter(([, n]) => n > 1).map(([d]) => d));
-  const ticked = new Set(state.ticks);
-
   const tbody = el("tbody");
-  rowViews = data.rows.map(row => {
-    const tr = rowNode(row, groups, sharedDex, ticked);
-    tbody.append(tr);
-    return {row, tr};
-  });
   tbody.addEventListener("change", ev => {
     const id = ev.target.dataset?.id;
     if (!id) return;
     commit(s => setTick(s, id, ev.target.checked));
-    ev.target.closest("tr").classList.toggle("ticked", ev.target.checked);
+    const tr = ev.target.closest("tr");
+    tr.classList.toggle("ticked", ev.target.checked);
+    if (hideTicked && ev.target.checked) tr.hidden = true;
     showCount();
     showMessages();
-    if (hideTicked) applyFilter();
   });
-  $("main").replaceChildren(el("table", {}, el("thead", {}, headerRow(groups)), tbody));
+  const end = el("div", {class: "rows-end"});
+  $("main").replaceChildren(el("table", {}, el("thead", {}, headerRow(groups)), tbody), end);
+  view = {groups, sharedDex, tbody, end, rows: [], shown: 0};
+  observer?.disconnect();
+  observer = new IntersectionObserver(es => { if (es.some(e => e.isIntersecting)) renderMore(); },
+    {root: $("main"), rootMargin: "0px 0px 1500px 0px"});
   applyFilter();
   showCount();
   showMessages();
@@ -207,10 +208,22 @@ function render() {
 
 function applyFilter() {
   const ticked = new Set(state.ticks);
-  for (const {row, tr} of rowViews) {
-    const hide = (hideTicked && ticked.has(row.id)) || !rowMatches(row, query);
-    if (tr.hidden !== hide) tr.hidden = hide;
-  }
+  view.rows = data.rows.filter(row => !(hideTicked && ticked.has(row.id)) && rowMatches(row, query));
+  view.shown = 0;
+  view.tbody.replaceChildren();
+  $("main").scrollTop = 0;
+  renderMore();
+}
+
+// Rows are built as the reader scrolls near the end: building all of them at once (115k nodes) made the page lag.
+function renderMore() {
+  const ticked = new Set(state.ticks);
+  const next = view.rows.slice(view.shown, view.shown + CHUNK);
+  view.tbody.append(...next.map(row => rowNode(row, view.groups, view.sharedDex, ticked)));
+  view.shown += next.length;
+  // observing again fires the callback again if the end marker is still in range after this chunk
+  observer.unobserve(view.end);
+  if (view.shown < view.rows.length) observer.observe(view.end);
 }
 
 function buildOwnButtons() {
