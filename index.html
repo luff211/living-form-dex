@@ -3,6 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- set by deploy/publish-pages.sh: version shown in the bar; data key changes whenever dex.json.gz does -->
+<meta name="version" content="2026.11.20-1c1ab62">
+<meta name="data-key" content="4067fbe08095">
 <title>Living form dex</title>
 <link rel="stylesheet" href="style.css">
 <script type="module" src="app.js"></script>
@@ -19,6 +22,7 @@
   <button id="export" type="button">Export</button>
   <button id="import" type="button">Import</button>
   <input id="import-file" type="file" accept=".json,application/json" hidden>
+  <span id="version" class="count"></span>
 </header>
 <div id="messages" class="messages" role="status"></div>
 <main id="main" class="wrap">
