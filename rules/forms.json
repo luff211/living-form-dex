@@ -2165,6 +2165,18 @@
     "versions": null,
     "verified": true,
     "checked": "2026-11-16"
+   },
+   {
+    "species": 666,
+    "form": 19,
+    "group": "ZA",
+    "method": "Event",
+    "place": "Poké Ball Pattern Vivillon (2026)",
+    "versions": null,
+    "note": "Mystery Gift via Internet until 26 Feb 2027, 01:59 UTC; needs Rewards unlocked in Mable's Research",
+    "source": "https://www.pokemon.com/uk/news/receive-a-poke-ball-pattern-vivillon-in-pokemon-legends-z-a",
+    "verified": true,
+    "checked": "2026-11-20"
    }
   ]
  },
