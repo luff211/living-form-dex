@@ -16,6 +16,14 @@ git -C "$tmp" rm -rqf --ignore-unmatch .
 mkdir -p "$tmp/data"
 cp site/index.html site/app.js site/logic.js site/style.css "$tmp/"
 cp site/data/dex.json.gz "$tmp/data/"
+# version = date of the commit + its short hash (e.g. 2026.11.20-f30cc10); -dirty when site/ or rules/ have
+# uncommitted changes. data-key = hash of the data file, so browsers fetch new data exactly when it changes.
+version="$(git log -1 --format=%cd --date=format:%Y.%m.%d)-$(git rev-parse --short HEAD)"
+[ -z "$(git status --porcelain -- site rules)" ] || version="$version-dirty"
+key=$(sha256sum site/data/dex.json.gz | cut -c1-12)
+sed -i -e "s|<meta name=\"version\" content=\"dev\">|<meta name=\"version\" content=\"$version\">|" \
+       -e "s|<meta name=\"data-key\" content=\"dev\">|<meta name=\"data-key\" content=\"$key\">|" "$tmp/index.html"
+grep -q "content=\"$key\"" "$tmp/index.html" || { echo "error: could not stamp the version into index.html" >&2; exit 1; }
 touch "$tmp/.nojekyll"
 git -C "$tmp" add -A
 if git -C "$tmp" diff --cached --quiet; then echo "gh-pages already up to date"; exit 0; fi

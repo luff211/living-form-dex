@@ -349,7 +349,10 @@ async function start() {
   owned = new Set(state.owned);
   showMessages();
   try {
-    const res = await fetch("data/dex.json.gz");
+    const meta = name => document.querySelector(`meta[name="${name}"]`)?.content || "dev";
+    $("version").textContent = `v${meta("version")}`;
+    // a new key per data build, so browsers never keep an old dex.json.gz
+    const res = await fetch(`data/dex.json.gz?v=${encodeURIComponent(meta("data-key"))}`);
     if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText} for data/dex.json.gz`);
     data = await new Response(res.body.pipeThrough(new DecompressionStream("gzip"))).json();
     if (!data || !Array.isArray(data.rows) || !Array.isArray(data.groups)) throw new Error("The data file has no rows.");
