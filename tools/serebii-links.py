@@ -3,6 +3,8 @@
 
   fetch: crawl the PokéEarth region indexes and each location's main page into build/serebii-cache/,
          slowly (one request every --delay seconds) and resumably; pages already cached are not fetched again.
+  check: fetch every page rules/serebii.json links to and report pages that fail or that never
+         mention a Pokémon the dex says is found there. Report-only.
   map:   match the locations in site/data/dex.json to cached pages and report the result;
          with --write, write rules/serebii.json. Only URLs that Serebii itself links to are used.
 """
@@ -177,9 +179,42 @@ def build_map(dex: dict) -> tuple[dict, dict]:
     return links, missing
 
 
+def page_text(raw: str) -> str:
+    """Cached pages are stored as latin-1; newer Serebii pages are really UTF-8."""
+    try:
+        raw = raw.encode("latin-1").decode("utf-8")
+    except UnicodeError:
+        pass
+    return norm(html.unescape(re.sub(r"<[^>]+>", " ", raw)))
+
+
+def check(dex: dict, links: dict, delay: float) -> list[str]:
+    """Fetch every linked page; report pages that fail and Pokémon a page never mentions."""
+    want = {}  # (group, place) -> names of Pokémon found there
+    for r in dex["rows"]:
+        for g, cell in r["cells"].items():
+            for e in cell:
+                if e["place"] in links.get(g, {}):
+                    want.setdefault((g, e["place"]), set()).add(r["name"])
+    problems, texts = [], {}
+    for (g, place), names in sorted(want.items()):
+        url = links[g][place]
+        if url not in texts:
+            raw = get(url[len(BASE):], delay)
+            texts[url] = None if raw is None or raw.startswith("<!-- HTTP") else page_text(raw)
+        text = texts[url]
+        if text is None:
+            problems.append(f"{g}\t{place}\t{url}\tpage failed")
+            continue
+        absent = sorted(n for n in names if norm(n) not in text)
+        if absent:
+            problems.append(f"{g}\t{place}\t{url}\tnot on page: {', '.join(absent)}")
+    return problems
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("mode", choices=["fetch", "survey", "map"])
+    ap.add_argument("mode", choices=["fetch", "survey", "map", "check"])
     ap.add_argument("--delay", type=float, default=4.0, help="seconds between requests (fetch)")
     ap.add_argument("--write", action="store_true", help="map: write rules/serebii.json")
     a = ap.parse_args()
@@ -187,6 +222,11 @@ def main() -> int:
         fetch(a.delay)
     elif a.mode == "survey":
         survey()
+    elif a.mode == "check":
+        dex = json.loads(Path("site/data/dex.json").read_text(encoding="utf-8"))
+        problems = check(dex, json.loads(Path("rules/serebii.json").read_text(encoding="utf-8"))["links"], a.delay)
+        print("\n".join(problems) or "all links ok")
+        print(f"{len(problems)} problems", file=sys.stderr)
     else:
         links, missing = build_map(json.loads(Path("site/data/dex.json").read_text(encoding="utf-8")))
         for g in GROUP_PAGES:
