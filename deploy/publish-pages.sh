@@ -22,8 +22,15 @@ version="$(git log -1 --format=%cd --date=format:%Y.%m.%d)-$(git rev-parse --sho
 [ -z "$(git status --porcelain -- site rules)" ] || version="$version-dirty"
 key=$(sha256sum site/data/dex.json.gz | cut -c1-12)
 sed -i -e "s|<meta name=\"version\" content=\"dev\">|<meta name=\"version\" content=\"$version\">|" \
-       -e "s|<meta name=\"data-key\" content=\"dev\">|<meta name=\"data-key\" content=\"$key\">|" "$tmp/index.html"
-grep -q "content=\"$key\"" "$tmp/index.html" || { echo "error: could not stamp the version into index.html" >&2; exit 1; }
+       -e "s|<meta name=\"data-key\" content=\"dev\">|<meta name=\"data-key\" content=\"$key\">|" \
+       -e "s|href=\"style.css\"|href=\"style.css?v=$version\"|" -e "s|src=\"app.js\"|src=\"app.js?v=$version\"|" \
+       "$tmp/index.html"
+# a reload refetches the page but may keep cached scripts, so each publish gives them new URLs too
+sed -i "s|from \"./logic.js\"|from \"./logic.js?v=$version\"|" "$tmp/app.js"
+for want in "content=\"$key\"" "style.css?v=" "app.js?v="; do
+  grep -qF "$want" "$tmp/index.html" || { echo "error: could not stamp $want into index.html" >&2; exit 1; }
+done
+grep -qF "logic.js?v=" "$tmp/app.js" || { echo "error: could not stamp the version into app.js" >&2; exit 1; }
 touch "$tmp/.nojekyll"
 git -C "$tmp" add -A
 if git -C "$tmp" diff --cached --quiet; then echo "gh-pages already up to date"; exit 0; fi
