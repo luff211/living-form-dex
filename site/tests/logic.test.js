@@ -75,3 +75,13 @@ test("availability owned vs elsewhere, empty owned counts all", () => {
   assert.equal(rowAvailability(pikachu, groups, none), "owned");
   assert.equal(rowAvailability(gimmighoul, groups, none), "elsewhere");
 });
+
+test("visibleRange picks the rows overlapping a band and the space around them", async () => {
+  const {visibleRange} = await import("../logic.js");
+  const h = [10, 10, 10, 10];
+  assert.deepEqual(visibleRange(h, 15, 25), {start: 1, end: 3, before: 10, after: 10});
+  assert.deepEqual(visibleRange(h, -100, 5), {start: 0, end: 1, before: 0, after: 30});
+  assert.deepEqual(visibleRange(h, 10, 20), {start: 1, end: 2, before: 10, after: 20});
+  assert.deepEqual(visibleRange(h, 500, 900), {start: 4, end: 4, before: 40, after: 0});
+  assert.deepEqual(visibleRange([], 0, 100), {start: 0, end: 0, before: 0, after: 0});
+});

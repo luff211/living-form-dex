@@ -36,6 +36,7 @@
 
 * { box-sizing: border-box; }
 html, body { height: 100%; margin: 0; }
+body { height: 100dvh; }
 body {
   display: flex; flex-direction: column;
   background: var(--bg); color: var(--fg);
@@ -65,21 +66,24 @@ button[aria-pressed="true"] { background: var(--on); color: var(--on-fg); border
 .messages:empty { display: none; }
 .messages p { margin: 0; padding: 4px 12px; background: var(--warn-bg); color: var(--warn-fg); }
 
-.wrap { flex: 1; min-height: 0; overflow: auto; }
+.wrap { flex: 1; min-height: 0; overflow: auto; overflow-anchor: none; } /* app.js keeps the scroll position itself */
 .loading, .load-error { padding: 16px 12px; }
-.rows-end { height: 1px; }
 .load-error code { display: block; margin-top: 6px; color: var(--muted); white-space: pre-wrap; }
 
 table { border-collapse: separate; border-spacing: 0; }
 th, td {
-  vertical-align: top; text-align: left; padding: 3px 6px;
+  vertical-align: top; text-align: left; padding: 3px 6px; overflow-wrap: anywhere;
   border-bottom: 1px solid var(--line); border-right: 1px solid var(--line);
 }
 thead th {
   position: sticky; top: 0; z-index: 2; background: var(--head); font-weight: 600;
 }
 thead .route { display: block; font-weight: 400; font-size: 11px; color: var(--muted); max-width: 16em; }
-td.game, th.game { min-width: 13em; max-width: 19em; }
+/* fixed widths: rows come and go while scrolling, so columns must not size to their content */
+td.game, th.game { width: 15em; min-width: 15em; max-width: 15em; }
+.fl { width: 5em; min-width: 5em; max-width: 5em; }
+tr.spacer td { padding: 0; border: 0; }
+.formline { display: none; }
 
 /* Pinned columns: tick, #, name, form */
 .p0, .p1, .p2, .p3 { position: sticky; background: var(--pin); z-index: 1; }
@@ -109,3 +113,18 @@ tr.ticked td.p0, tr.ticked td.p1, tr.ticked td.p2, tr.ticked td.p3 { background:
 .note { display: block; font-size: 11px; color: var(--muted); font-style: italic; }
 .more { margin-top: 2px; padding: 0 6px; font-size: 11px; }
 td.expandable { cursor: pointer; }
+
+/* Phones: pin only the tick and name columns, show the form under the name, bigger touch targets */
+@media (max-width: 640px) {
+  .bar { padding: 6px 8px; gap: 6px 10px; }
+  .search input { font-size: 16px; width: 11em; } /* under 16px, iOS zooms in on focus */
+  button { padding: 5px 10px; }
+  .p0 { width: 2.6em; min-width: 2.6em; }
+  .p0 input { width: 20px; height: 20px; }
+  .p1, .p3 { left: auto; }
+  .p2 { left: 2.6em; width: 8.5em; min-width: 8.5em; max-width: 8.5em; border-right: 2px solid var(--line); }
+  .p3 { border-right: 1px solid var(--line); }
+  thead .route { display: none; } /* the sticky header would cover half the screen */
+  .formline { display: block; font-size: 11px; color: var(--muted); font-weight: 400; }
+  td.game, th.game { width: 12.5em; min-width: 12.5em; max-width: 12.5em; }
+}
