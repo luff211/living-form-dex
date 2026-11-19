@@ -67,6 +67,7 @@ button[aria-pressed="true"] { background: var(--on); color: var(--on-fg); border
 
 .wrap { flex: 1; min-height: 0; overflow: auto; }
 .loading, .load-error { padding: 16px 12px; }
+.rows-end { height: 1px; }
 .load-error code { display: block; margin-top: 6px; color: var(--muted); white-space: pre-wrap; }
 
 table { border-collapse: separate; border-spacing: 0; }
