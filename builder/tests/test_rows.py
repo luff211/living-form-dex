@@ -35,6 +35,14 @@ class Rows(unittest.TestCase):
         self.assertEqual(pika[2].form_name, "Original")
         self.assertEqual([r.id for r in self.rows if r.dex == 215 and r.form == 1], ["0215-1-m", "0215-1-f"])
 
+    def test_variants_split_each_form(self):
+        alc = [r for r in self.rows if r.dex == 869]
+        self.assertEqual(len(alc), 63)
+        self.assertEqual((alc[0].id, alc[0].form_name, alc[0].variant),
+                         ("0869-0-strawberry", "Vanilla Cream, Strawberry Sweet", "Strawberry Sweet"))
+        self.assertEqual(alc[-1].id, "0869-8-ribbon")
+        self.assertEqual(len({r.id for r in alc}), 63)
+
     def test_form_is_gender_not_doubled(self):
         self.assertEqual(len(self.ids(678)), 2)
 

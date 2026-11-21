@@ -144,6 +144,13 @@ def load_rules(rules_dir: Path) -> Rules:
         _require(e.get("group") in versions_of, where, "unknown 'group'")
         _require(isinstance(e.get("note"), str) and e["note"], where, "needs a string 'note'")
 
+    for i, e in enumerate(_entries(forms.get("variants", {"entries": []}), "forms.json variants")):
+        where = f"forms.json variants entry {i}"
+        _check_species(e, where)
+        _require(isinstance(e.get("names"), list) and len(e["names"]) > 1 and all(isinstance(n, str) and n for n in e["names"])
+                 and len(set(e["names"])) == len(e["names"]), where, "'names' must be two or more distinct strings")
+        _require(isinstance(e.get("note"), str) and "{name}" in e["note"], where, "'note' must be a string holding {name}")
+
     mega_forms = forms.get("mega_forms", {"entries": []})
     for i, e in enumerate(_entries(mega_forms, "forms.json mega_forms")):
         where = f"forms.json mega_forms entry {i}"

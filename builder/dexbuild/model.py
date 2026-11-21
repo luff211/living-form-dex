@@ -27,6 +27,7 @@ class Row:
     mega: list[str]
     gmax: bool
     gmax_unverified: bool
+    variant: str | None = None  # a look PKHeX keeps outside the form number (Alcremie's sweet), from forms.json variants
     cells: dict[str, list[Entry]] = field(default_factory=dict)   # group id -> entries, filled in Task 8
     other: list[Entry] = field(default_factory=list)
 

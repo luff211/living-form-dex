@@ -2353,5 +2353,25 @@
     "checked": "2026-11-16"
    }
   ]
+ },
+ "variants": {
+  "entries": [
+   {
+    "species": 869,
+    "names": [
+     "Strawberry Sweet",
+     "Berry Sweet",
+     "Love Sweet",
+     "Star Sweet",
+     "Clover Sweet",
+     "Flower Sweet",
+     "Ribbon Sweet"
+    ],
+    "note": "Evolve holding a {name}",
+    "reason": "The sweet Milcery holds when it evolves sets the topping; each cream comes with each of the seven sweets, and PKHeX keeps the sweet outside the form number",
+    "verified": true,
+    "checked": "2026-11-21"
+   }
+  ]
  }
 }

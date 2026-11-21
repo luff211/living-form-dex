@@ -49,6 +49,15 @@ class AssembleTests(unittest.TestCase):
         r = run({("FRLG", 1, 0): [Entry("Static", "Cave", ("FR",), note="A")]}, annotate=[a])
         self.assertEqual((r.cells["FRLG"][0].note, r.cells["FRLG"][0].unverified), ("A; B", False))
 
+    def test_variant_note_only_on_evolve_and_form_change(self):
+        rl = rules()
+        rl.forms["variants"] = {"entries": [{"species": 1, "names": ["Star Sweet", "Love Sweet"], "note": "Evolve holding a {name}"}]}
+        r = row()
+        r.variant = "Star Sweet"
+        run({("SwSh", 1, 0): [Entry("Evolve", "Milcery", ("SW",)), Entry("Raid", "Den", ("SW",), note="A")]}, r, rl)
+        self.assertEqual(sorted((e.method, e.note) for e in r.cells["SwSh"]),
+                         [("Evolve", "Evolve holding a Star Sweet"), ("Raid", "A")])
+
     def test_gender_row_drops_other_gender_entries(self):
         es = {("SwSh", 1, 0): [Entry("Wild", "A", ("SW",), gender="f"), Entry("Wild", "B", ("SW",), gender="m"),
                                Entry("Wild", "C", ("SW",))]}

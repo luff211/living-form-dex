@@ -30,6 +30,7 @@ def fill(rows: list[Row], entries: dict, rules) -> None:
     order = {g["id"]: {v["code"]: i for i, v in enumerate(g["versions"])} for g in rules.games["groups"]}
     mine = {g["id"]: [v["code"] for v in g["versions"]] for g in rules.games["groups"]}
     methods, notes = rules.forms["methods"]["entries"], rules.forms["annotate"]["entries"]
+    variant_note = {e["species"]: e["note"] for e in rules.forms.get("variants", {"entries": []})["entries"]}
     for row in rows:
         def wanted(es):
             return [e for e in es if row.gender is None or e.gender in (None, row.gender)]
@@ -46,6 +47,10 @@ def fill(rows: list[Row], entries: dict, rules) -> None:
             for a in (a for a in notes if _matches(a, row, g)):
                 cell = [replace(e, note=f"{e.note}; {a['note']}" if e.note else a["note"],
                                 unverified=e.unverified or not a["verified"]) for e in cell]
+            if row.variant:   # the variant is chosen when it evolves or changes form, not by where it is found
+                vn = variant_note[row.species].format(name=row.variant)
+                cell = [replace(e, note=f"{e.note}; {vn}" if e.note else vn) if e.method in ("Evolve", "Form change")
+                        else e for e in cell]
             cell = _tidy(cell, order[g])
             if cell:
                 row.cells[g] = cell
