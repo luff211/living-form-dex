@@ -2502,6 +2502,42 @@
     "note": "Opens after its first side mission; harder trims unlock as the Scyther practises; reverts to Natural Form after five days",
     "verified": true,
     "checked": "2026-11-21"
+   },
+   {
+    "species": 492,
+    "form": 1,
+    "group": "B2W2",
+    "method": "Form change",
+    "place": "Gracidea from a woman in the Striaton City Pokémon Center",
+    "versions": null,
+    "note": "Use the Gracidea on Shaymin between 5am and 8pm; Sky Forme reverts at night; Shaymin must be transferred in from another game",
+    "needs_other_game": true,
+    "verified": true,
+    "checked": "2026-11-21"
+   },
+   {
+    "species": 492,
+    "form": 1,
+    "group": "SV",
+    "method": "Form change",
+    "place": "Gracidea from the Porto Marinada auction",
+    "versions": null,
+    "note": "Use the Gracidea on Shaymin between 5am and 8pm; Sky Forme reverts at night; Shaymin must come in through Pokémon HOME; Sky Forme stays Sky Forme when put in HOME",
+    "needs_other_game": true,
+    "verified": true,
+    "checked": "2026-11-21"
+   },
+   {
+    "species": 720,
+    "form": 1,
+    "group": "SV",
+    "method": "Form change",
+    "place": "Prison Bottle from the Porto Marinada auction",
+    "versions": null,
+    "note": "Hoopa must come in through Pokémon HOME; Unbound reverts to Confined after three days in the game, but stays Unbound in HOME",
+    "needs_other_game": true,
+    "verified": true,
+    "checked": "2026-11-21"
    }
   ]
  },
