@@ -43,6 +43,12 @@ class Rows(unittest.TestCase):
         self.assertEqual(alc[-1].id, "0869-8-ribbon")
         self.assertEqual(len({r.id for r in alc}), 63)
 
+    def test_merged_forms_have_no_row(self):
+        self.assertEqual(self.ids(414), ["0414-0"])
+        self.assertEqual(self.ids(658), ["0658-0"])
+        self.assertEqual(self.ids(718), ["0718-0", "0718-1"])
+        self.assertEqual([r.form_name for r in self.rows if r.dex == 414], [""])
+
     def test_form_is_gender_not_doubled(self):
         self.assertEqual(len(self.ids(678)), 2)
 

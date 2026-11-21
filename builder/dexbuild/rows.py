@@ -9,13 +9,14 @@ def build_rows(raw: dict, rules: Rules) -> tuple[list[Row], list[LeftOut]]:
         for f in range(e["forms"][0], e["forms"][1] + 1):
             excluded[(e["species"], f)] = e
 
+    merged = {(e["species"], f) for e in rules.forms.get("merge", {"entries": []})["entries"] for f in e["forms"]}
     variants = {e["species"]: e["names"] for e in rules.forms.get("variants", {"entries": []})["entries"]}
     rows, left = [], []
     for sp in raw["species"]:
         sid = sp["id"]
         mine = []
         for f in sp["forms"]:
-            if f["battle_only"] or f["fused"]:
+            if f["battle_only"] or f["fused"] or (sid, f["form"]) in merged:   # merged: shown on another form's row
                 continue
             rule = excluded.get((sid, f["form"]))
             if rule:

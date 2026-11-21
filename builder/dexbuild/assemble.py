@@ -42,7 +42,7 @@ def fill(rows: list[Row], entries: dict, rules) -> None:
             rep = [m for m in methods if _matches(m, row, g)]
             if rep:
                 cell = [Entry(m["method"], m["place"], tuple(m["versions"] or mine[g]), m.get("dlc"),
-                              unverified=not m["verified"], note=m.get("note"),
+                              ended=m.get("ended", False), unverified=not m["verified"], note=m.get("note"),
                               needs_other_game=m.get("needs_other_game", False)) for m in rep]
             for a in (a for a in notes if _matches(a, row, g)):
                 cell = [replace(e, note=f"{e.note}; {a['note']}" if e.note else a["note"],
@@ -75,9 +75,20 @@ def derived_rules(entries: dict, rules) -> dict:
     return out
 
 
+def merge_forms(entries: dict, rules) -> dict:
+    """Move the entries of forms listed in forms.json merge onto the form they merge into. Done after Evolve and
+    Breed are derived, so an evolution that needs the merged form (Own Tempo Rockruff -> Dusk Lycanroc) keeps it."""
+    into = {(e["species"], f): e["into"] for e in rules.forms.get("merge", {"entries": []})["entries"] for f in e["forms"]}
+    out = {}
+    for (g, sid, form), es in entries.items():
+        out.setdefault((g, sid, into.get((sid, form), form)), []).extend(es)
+    return out
+
+
 def assemble(raw: dict, rules) -> tuple[list[Row], list[LeftOut]]:
     rows, left = build_rows(raw, rules)
-    fill(rows, derived_rules(add_evolve_and_breed(direct_entries(raw, rules), raw, rules), rules), rules)
+    entries = derived_rules(add_evolve_and_breed(direct_entries(raw, rules), raw, rules), rules)
+    fill(rows, merge_forms(entries, rules), rules)
     return rows, left
 
 

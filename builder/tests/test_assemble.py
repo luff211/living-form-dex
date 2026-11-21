@@ -58,6 +58,21 @@ class AssembleTests(unittest.TestCase):
         self.assertEqual(sorted((e.method, e.note) for e in r.cells["SwSh"]),
                          [("Evolve", "Evolve holding a Star Sweet"), ("Raid", "A")])
 
+    def test_merge_moves_entries_onto_the_kept_form(self):
+        from dexbuild.assemble import merge_forms
+        rl = rules()
+        rl.forms["merge"] = {"entries": [{"species": 1, "forms": [1, 2], "into": 0}]}
+        out = merge_forms({("SwSh", 1, 0): [Entry("Wild", "A", ("SW",))], ("SwSh", 1, 2): [Entry("Event", "B", ("SH",))],
+                           ("SwSh", 2, 1): [Entry("Wild", "C", ("SW",))]}, rl)
+        self.assertEqual([e.place for e in out[("SwSh", 1, 0)]], ["A", "B"])
+        self.assertNotIn(("SwSh", 1, 2), out)
+        self.assertIn(("SwSh", 2, 1), out)
+
+    def test_method_rule_can_be_ended(self):
+        m = {"species": 1, "form": 0, "group": "SwSh", "method": "Form change", "place": "Item", "versions": None,
+             "ended": True, "verified": True, "checked": ""}
+        self.assertTrue(run({}, methods=[m]).cells["SwSh"][0].ended)
+
     def test_gender_row_drops_other_gender_entries(self):
         es = {("SwSh", 1, 0): [Entry("Wild", "A", ("SW",), gender="f"), Entry("Wild", "B", ("SW",), gender="m"),
                                Entry("Wild", "C", ("SW",))]}

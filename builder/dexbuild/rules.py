@@ -121,6 +121,8 @@ def load_rules(rules_dir: Path) -> Rules:
                 _require(vs is None or isinstance(vs, list), where, "'versions' must be a list or null")
                 for v in vs or []:
                     _require(v in versions_of[e["group"]], where, f"version {v!r} is not in group {e['group']}")
+                for k in ("ended", "needs_other_game"):
+                    _require(isinstance(e.get(k, False), bool), where, f"'{k}' must be a boolean")
             else:
                 _require(isinstance(e.get("note"), str), where, "needs a string 'note'")
 
@@ -143,6 +145,13 @@ def load_rules(rules_dir: Path) -> Rules:
         _check_species(e, where)
         _require(e.get("group") in versions_of, where, "unknown 'group'")
         _require(isinstance(e.get("note"), str) and e["note"], where, "needs a string 'note'")
+
+    for i, e in enumerate(_entries(forms.get("merge", {"entries": []}), "forms.json merge")):
+        where = f"forms.json merge entry {i}"
+        _check_species(e, where)
+        _require(_int_list(e.get("forms")) and isinstance(e.get("into"), int) and e["into"] not in e["forms"], where,
+                 "'forms' must be a list of integers and 'into' another integer form")
+        _require(isinstance(e.get("reason"), str) and e["reason"], where, "needs a string 'reason'")
 
     for i, e in enumerate(_entries(forms.get("variants", {"entries": []}), "forms.json variants")):
         where = f"forms.json variants entry {i}"

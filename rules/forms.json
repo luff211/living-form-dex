@@ -32,16 +32,6 @@
     "checked": "2026-11-16"
    },
    {
-    "species": 492,
-    "forms": [
-     1,
-     1
-    ],
-    "reason": "Sky Forme goes back to Land Forme at night and when put in a box",
-    "verified": true,
-    "checked": "2026-11-16"
-   },
-   {
     "species": 493,
     "forms": [
      1,
@@ -58,26 +48,6 @@
      4
     ],
     "reason": "Drive form follows the held Drive; HOME strips items",
-    "verified": true,
-    "checked": "2026-11-16"
-   },
-   {
-    "species": 676,
-    "forms": [
-     1,
-     9
-    ],
-    "reason": "trims revert to Natural Form after a few days or when stored",
-    "verified": true,
-    "checked": "2026-11-16"
-   },
-   {
-    "species": 720,
-    "forms": [
-     1,
-     1
-    ],
-    "reason": "Unbound form reverts to Confined when stored",
     "verified": true,
     "checked": "2026-11-16"
    },
@@ -2177,6 +2147,361 @@
     "source": "https://www.pokemon.com/uk/news/receive-a-poke-ball-pattern-vivillon-in-pokemon-legends-z-a",
     "verified": true,
     "checked": "2026-11-20"
+   },
+   {
+    "species": 492,
+    "form": 1,
+    "group": "DPPt",
+    "method": "Form change",
+    "place": "Gracidea from a woman in Floaroma Town when Shaymin is in the party",
+    "versions": [
+     "Pt"
+    ],
+    "note": "Use the Gracidea on Shaymin between 5am and 8pm; Sky Forme reverts at night; Shaymin itself came only from events that have ended",
+    "ended": true,
+    "verified": true,
+    "checked": "2026-11-21"
+   },
+   {
+    "species": 492,
+    "form": 1,
+    "group": "HGSS",
+    "method": "Form change",
+    "place": "Gracidea from the Goldenrod City Flower Shop when Shaymin is in the party",
+    "versions": null,
+    "note": "Use the Gracidea on Shaymin between 5am and 8pm; Sky Forme reverts at night; Shaymin itself came only from events that have ended",
+    "ended": true,
+    "verified": true,
+    "checked": "2026-11-21"
+   },
+   {
+    "species": 492,
+    "form": 1,
+    "group": "BW",
+    "method": "Form change",
+    "place": "Gracidea in Lacunosa Town",
+    "versions": null,
+    "note": "Use the Gracidea on Shaymin between 5am and 8pm; Sky Forme reverts at night; Shaymin itself came only from events that have ended",
+    "ended": true,
+    "verified": true,
+    "checked": "2026-11-21"
+   },
+   {
+    "species": 492,
+    "form": 1,
+    "group": "XY",
+    "method": "Form change",
+    "place": "Gracidea in Snowbelle City",
+    "versions": null,
+    "note": "Use the Gracidea on Shaymin between 5am and 8pm; Sky Forme reverts at night; Shaymin itself came only from events that have ended",
+    "ended": true,
+    "verified": true,
+    "checked": "2026-11-21"
+   },
+   {
+    "species": 492,
+    "form": 1,
+    "group": "ORAS",
+    "method": "Form change",
+    "place": "Gracidea on Route 123",
+    "versions": null,
+    "note": "Use the Gracidea on Shaymin between 5am and 8pm; Sky Forme reverts at night; Shaymin itself came only from events that have ended",
+    "ended": true,
+    "verified": true,
+    "checked": "2026-11-21"
+   },
+   {
+    "species": 492,
+    "form": 1,
+    "group": "SM",
+    "method": "Form change",
+    "place": "Gracidea in Hau'oli City",
+    "versions": null,
+    "note": "Use the Gracidea on Shaymin between 5am and 8pm; Sky Forme reverts at night; Shaymin itself came only from events that have ended",
+    "ended": true,
+    "verified": true,
+    "checked": "2026-11-21"
+   },
+   {
+    "species": 492,
+    "form": 1,
+    "group": "USUM",
+    "method": "Form change",
+    "place": "Gracidea in Hau'oli City",
+    "versions": null,
+    "note": "Use the Gracidea on Shaymin between 5am and 8pm; Sky Forme reverts at night; Shaymin itself came only from events that have ended",
+    "ended": true,
+    "verified": true,
+    "checked": "2026-11-21"
+   },
+   {
+    "species": 492,
+    "form": 1,
+    "group": "BDSP",
+    "method": "Form change",
+    "place": "Gracidea in Floaroma Town",
+    "versions": null,
+    "note": "Use the Gracidea on Shaymin between 5am and 8pm; Sky Forme reverts at night; Shaymin itself came only from events that have ended",
+    "ended": true,
+    "verified": true,
+    "checked": "2026-11-21"
+   },
+   {
+    "species": 492,
+    "form": 1,
+    "group": "PLA",
+    "method": "Form change",
+    "place": "Gracidea at the Fieldlands Camp",
+    "versions": null,
+    "note": "Use the Gracidea on Shaymin between 5am and 8pm; Sky Forme reverts at night; Shaymin needs Brilliant Diamond or Shining Pearl save data",
+    "needs_other_game": true,
+    "verified": true,
+    "checked": "2026-11-21"
+   },
+   {
+    "species": 720,
+    "form": 1,
+    "group": "ORAS",
+    "method": "Form change",
+    "place": "Prison Bottle from a clerk in any Poké Mart when Hoopa is in the party",
+    "versions": null,
+    "note": "Prison Bottle on Hoopa; Unbound reverts to Confined after three days; Hoopa itself came only from events that have ended",
+    "ended": true,
+    "verified": true,
+    "checked": "2026-11-21"
+   },
+   {
+    "species": 720,
+    "form": 1,
+    "group": "SM",
+    "method": "Form change",
+    "place": "Prison Bottle at Aether Paradise",
+    "versions": null,
+    "note": "Prison Bottle on Hoopa; Unbound reverts to Confined after three days; Hoopa itself came only from events that have ended",
+    "ended": true,
+    "verified": true,
+    "checked": "2026-11-21"
+   },
+   {
+    "species": 720,
+    "form": 1,
+    "group": "USUM",
+    "method": "Form change",
+    "place": "Prison Bottle at Aether Paradise",
+    "versions": null,
+    "note": "Prison Bottle on Hoopa; Unbound reverts to Confined after three days; Hoopa itself came only from events that have ended",
+    "ended": true,
+    "verified": true,
+    "checked": "2026-11-21"
+   },
+   {
+    "species": 720,
+    "form": 1,
+    "group": "ZA",
+    "method": "Form change",
+    "place": "Prison Bottle at Hotel Z",
+    "versions": null,
+    "note": "Prison Bottle on Hoopa; Unbound reverts to Confined after three days",
+    "verified": true,
+    "checked": "2026-11-21"
+   },
+   {
+    "species": 676,
+    "form": 1,
+    "group": "XY",
+    "method": "Form change",
+    "place": "Trim at Friseur Furfrou in Lumiose City",
+    "versions": null,
+    "note": "Reverts to Natural Form after five days",
+    "verified": false,
+    "checked": "2026-11-21"
+   },
+   {
+    "species": 676,
+    "form": 1,
+    "group": "ZA",
+    "method": "Form change",
+    "place": "Trim at Mirte's salon in Jaune Sector 6 (500 Poké Dollars)",
+    "versions": null,
+    "note": "Opens after its first side mission; harder trims unlock as the Scyther practises; reverts to Natural Form after five days",
+    "verified": true,
+    "checked": "2026-11-21"
+   },
+   {
+    "species": 676,
+    "form": 2,
+    "group": "XY",
+    "method": "Form change",
+    "place": "Trim at Friseur Furfrou in Lumiose City",
+    "versions": null,
+    "note": "Reverts to Natural Form after five days",
+    "verified": false,
+    "checked": "2026-11-21"
+   },
+   {
+    "species": 676,
+    "form": 2,
+    "group": "ZA",
+    "method": "Form change",
+    "place": "Trim at Mirte's salon in Jaune Sector 6 (500 Poké Dollars)",
+    "versions": null,
+    "note": "Opens after its first side mission; harder trims unlock as the Scyther practises; reverts to Natural Form after five days",
+    "verified": true,
+    "checked": "2026-11-21"
+   },
+   {
+    "species": 676,
+    "form": 3,
+    "group": "XY",
+    "method": "Form change",
+    "place": "Trim at Friseur Furfrou in Lumiose City",
+    "versions": null,
+    "note": "Reverts to Natural Form after five days",
+    "verified": false,
+    "checked": "2026-11-21"
+   },
+   {
+    "species": 676,
+    "form": 3,
+    "group": "ZA",
+    "method": "Form change",
+    "place": "Trim at Mirte's salon in Jaune Sector 6 (500 Poké Dollars)",
+    "versions": null,
+    "note": "Opens after its first side mission; harder trims unlock as the Scyther practises; reverts to Natural Form after five days",
+    "verified": true,
+    "checked": "2026-11-21"
+   },
+   {
+    "species": 676,
+    "form": 4,
+    "group": "XY",
+    "method": "Form change",
+    "place": "Trim at Friseur Furfrou in Lumiose City",
+    "versions": null,
+    "note": "Reverts to Natural Form after five days",
+    "verified": false,
+    "checked": "2026-11-21"
+   },
+   {
+    "species": 676,
+    "form": 4,
+    "group": "ZA",
+    "method": "Form change",
+    "place": "Trim at Mirte's salon in Jaune Sector 6 (500 Poké Dollars)",
+    "versions": null,
+    "note": "Opens after its first side mission; harder trims unlock as the Scyther practises; reverts to Natural Form after five days",
+    "verified": true,
+    "checked": "2026-11-21"
+   },
+   {
+    "species": 676,
+    "form": 5,
+    "group": "XY",
+    "method": "Form change",
+    "place": "Trim at Friseur Furfrou in Lumiose City",
+    "versions": null,
+    "note": "Reverts to Natural Form after five days",
+    "verified": false,
+    "checked": "2026-11-21"
+   },
+   {
+    "species": 676,
+    "form": 5,
+    "group": "ZA",
+    "method": "Form change",
+    "place": "Trim at Mirte's salon in Jaune Sector 6 (500 Poké Dollars)",
+    "versions": null,
+    "note": "Opens after its first side mission; harder trims unlock as the Scyther practises; reverts to Natural Form after five days",
+    "verified": true,
+    "checked": "2026-11-21"
+   },
+   {
+    "species": 676,
+    "form": 6,
+    "group": "XY",
+    "method": "Form change",
+    "place": "Trim at Friseur Furfrou in Lumiose City",
+    "versions": null,
+    "note": "Reverts to Natural Form after five days",
+    "verified": false,
+    "checked": "2026-11-21"
+   },
+   {
+    "species": 676,
+    "form": 6,
+    "group": "ZA",
+    "method": "Form change",
+    "place": "Trim at Mirte's salon in Jaune Sector 6 (500 Poké Dollars)",
+    "versions": null,
+    "note": "Opens after its first side mission; harder trims unlock as the Scyther practises; reverts to Natural Form after five days",
+    "verified": true,
+    "checked": "2026-11-21"
+   },
+   {
+    "species": 676,
+    "form": 7,
+    "group": "XY",
+    "method": "Form change",
+    "place": "Trim at Friseur Furfrou in Lumiose City",
+    "versions": null,
+    "note": "Reverts to Natural Form after five days",
+    "verified": false,
+    "checked": "2026-11-21"
+   },
+   {
+    "species": 676,
+    "form": 7,
+    "group": "ZA",
+    "method": "Form change",
+    "place": "Trim at Mirte's salon in Jaune Sector 6 (500 Poké Dollars)",
+    "versions": null,
+    "note": "Opens after its first side mission; harder trims unlock as the Scyther practises; reverts to Natural Form after five days",
+    "verified": true,
+    "checked": "2026-11-21"
+   },
+   {
+    "species": 676,
+    "form": 8,
+    "group": "XY",
+    "method": "Form change",
+    "place": "Trim at Friseur Furfrou in Lumiose City",
+    "versions": null,
+    "note": "Reverts to Natural Form after five days",
+    "verified": false,
+    "checked": "2026-11-21"
+   },
+   {
+    "species": 676,
+    "form": 8,
+    "group": "ZA",
+    "method": "Form change",
+    "place": "Trim at Mirte's salon in Jaune Sector 6 (500 Poké Dollars)",
+    "versions": null,
+    "note": "Opens after its first side mission; harder trims unlock as the Scyther practises; reverts to Natural Form after five days",
+    "verified": true,
+    "checked": "2026-11-21"
+   },
+   {
+    "species": 676,
+    "form": 9,
+    "group": "XY",
+    "method": "Form change",
+    "place": "Trim at Friseur Furfrou in Lumiose City",
+    "versions": null,
+    "note": "Reverts to Natural Form after five days",
+    "verified": false,
+    "checked": "2026-11-21"
+   },
+   {
+    "species": 676,
+    "form": 9,
+    "group": "ZA",
+    "method": "Form change",
+    "place": "Trim at Mirte's salon in Jaune Sector 6 (500 Poké Dollars)",
+    "versions": null,
+    "note": "Opens after its first side mission; harder trims unlock as the Scyther practises; reverts to Natural Form after five days",
+    "verified": true,
+    "checked": "2026-11-21"
    }
   ]
  },
@@ -2369,6 +2694,61 @@
     ],
     "note": "Evolve holding a {name}",
     "reason": "The sweet Milcery holds when it evolves sets the topping; each cream comes with each of the seven sweets, and PKHeX keeps the sweet outside the form number",
+    "verified": true,
+    "checked": "2026-11-21"
+   }
+  ]
+ },
+ "merge": {
+  "entries": [
+   {
+    "species": 414,
+    "forms": [
+     1,
+     2
+    ],
+    "into": 0,
+    "reason": "Mothim keeps Burmy's cloak as a form number, but every Mothim looks the same as the form it is merged into",
+    "verified": true,
+    "checked": "2026-11-21"
+   },
+   {
+    "species": 658,
+    "forms": [
+     1
+    ],
+    "into": 0,
+    "reason": "Battle Bond Greninja is Ash-Greninja only in battle; outside battle it looks the same as the form it is merged into",
+    "verified": true,
+    "checked": "2026-11-21"
+   },
+   {
+    "species": 744,
+    "forms": [
+     1
+    ],
+    "into": 0,
+    "reason": "Own Tempo Rockruff (the one that evolves into Dusk Lycanroc) looks the same as the form it is merged into",
+    "verified": true,
+    "checked": "2026-11-21"
+   },
+   {
+    "species": 718,
+    "forms": [
+     2
+    ],
+    "into": 1,
+    "reason": "Power Construct 10% Zygarde looks the same as the form it is merged into",
+    "verified": true,
+    "checked": "2026-11-21"
+   },
+   {
+    "species": 718,
+    "forms": [
+     3
+    ],
+    "into": 0,
+    "reason": "Power Construct 50% Zygarde looks the same as the form it is merged into",
     "verified": true,
     "checked": "2026-11-21"
    }
