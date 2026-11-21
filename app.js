@@ -2,7 +2,7 @@ import {
   visibleGroups, entryOwned, summarize, versionMarks, rowAvailability, elsewhereLabels, rowMatches,
   STATE_KEY, emptyState, parseState, serializeState, orphanTicks, tickedCount, setTick, setOwned, latestState,
   visibleRange, placeLink,
-} from "./logic.js?v=2026.11.21-cbd19a9";
+} from "./logic.js?v=2026.11.21-e914e22";
 
 const $ = id => document.getElementById(id);
 const UNVERIFIED_TITLE = "Not yet checked by hand against a game guide; treat as a guess.";
