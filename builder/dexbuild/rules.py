@@ -1,7 +1,10 @@
 """Load and validate the hand-kept rule files in rules/."""
 import json
+import re
 from dataclasses import dataclass, field
 from pathlib import Path
+
+SPRITE_BASE = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"
 
 
 class RulesError(Exception):
@@ -23,6 +26,8 @@ class Rules:
     no_spread: set[tuple[int, int]] = field(default_factory=set)   # (species, form) never given "Form varies" or Evolve/Breed
     mega_forms: dict[int, list[int]] = field(default_factory=dict)   # species -> forms that have the Mega (default form 0)
     serebii: dict[str, dict[str, str]] = field(default_factory=dict)   # group -> place -> PokéEarth URL
+    sprite_base: str = ""                                                # sprites: row id -> image path under the base
+    sprites: dict[str, str] = field(default_factory=dict)
 
 
 def _read(rules_dir, name):
@@ -209,6 +214,15 @@ def load_rules(rules_dir: Path) -> Rules:
                 f"serebii.json group {g!r}", "must map place names to https://www.serebii.net/pokearth/ URLs")
         serebii = links
 
+    sprite_base, sprites = "", {}
+    if (rules_dir / "sprites.json").exists():   # optional: written by tools/sprites.py
+        sp = _read(rules_dir, "sprites.json")
+        _require(sp.get("base") == SPRITE_BASE, "sprites.json", f"'base' must be {SPRITE_BASE}")
+        _require(isinstance(sp.get("sprites"), dict) and all(
+            isinstance(v, str) and re.fullmatch(r"(female/)?[0-9]+(-[a-z0-9-]+)?\.png", v) for v in sp["sprites"].values()),
+            "sprites.json", "'sprites' must map row ids to PokeAPI sprite file names")
+        sprite_base, sprites = sp["base"], sp["sprites"]
+
     return Rules(
         games=games,
         forms=forms,
@@ -224,4 +238,6 @@ def load_rules(rules_dir: Path) -> Rules:
         no_spread={(e["species"], e["form"]) for e in no_spread["entries"]},
         mega_forms={e["species"]: e["forms"] for e in mega_forms["entries"]},
         serebii=serebii,
+        sprite_base=sprite_base,
+        sprites=sprites,
     )

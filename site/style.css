@@ -114,6 +114,8 @@ tr.ticked td.p0, tr.ticked td.p1, tr.ticked td.p2, tr.ticked td.p3 { background:
 .more { margin-top: 2px; padding: 0 6px; font-size: 11px; }
 td.expandable { cursor: pointer; }
 
+.sprite { float: left; margin: -3px 4px -3px -4px; image-rendering: pixelated; }
+
 /* Phones: pin only the tick and name columns, show the form under the name, bigger touch targets */
 @media (max-width: 640px) {
   .bar { padding: 6px 8px; gap: 6px 10px; }
@@ -127,6 +129,7 @@ td.expandable { cursor: pointer; }
   thead .route { display: none; } /* the sticky header would cover half the screen */
   .formline { display: block; font-size: 11px; color: var(--muted); font-weight: 400; }
   td.game, th.game { width: 12.5em; min-width: 12.5em; max-width: 12.5em; }
+  .sprite { float: none; display: block; width: 32px; height: 32px; margin: 0 0 2px -4px; } /* the name column is narrow */
 }
 .entry a { color: inherit; text-decoration: underline dotted; text-underline-offset: 2px; }
 .entry a:hover { text-decoration-style: solid; }

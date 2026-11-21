@@ -25,6 +25,8 @@ A form counts as obtainable in a game if a player who starts that one game alone
 
 Encounter, evolution and form data come from [PKHeX.Core](https://github.com/kwsch/PKHeX). PKHeX checks whether a Pokémon is *legal*, which is looser than *obtainable*: it accepts anything that could have been traded in or received from an event. Hand-kept rules in `rules/` correct this, for example for version-specific fossils, ended events and Pokéwalker courses. The rules were checked against game guides and wikis, but mistakes are likely. If you find one, please [open an issue](https://github.com/luff211/living-form-dex/issues) naming the row, the game and a source.
 
+Sprites are loaded from [PokeAPI/sprites](https://github.com/PokeAPI/sprites) on GitHub (`tools/sprites.py` picks one per row and checks it exists). Place names link to [Serebii PokéEarth](https://www.serebii.net/pokearth/) where Serebii has a page for that place (`tools/serebii-links.py`).
+
 ## Building it yourself
 
 Pipeline: .NET exporter (PKHeX data) → `build/raw.json` → Python build step (stdlib only) → static page in `site/`.

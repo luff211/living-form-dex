@@ -45,6 +45,21 @@ class Rules(unittest.TestCase):
         self.assertEqual(load_rules(self.tmp).serebii["GSC"]["Route 7"],
                          "https://www.serebii.net/pokearth/kanto/2nd/route7.shtml")
 
+    def test_sprites_loaded_and_checked(self):
+        from dexbuild.rules import SPRITE_BASE
+        (self.tmp / "sprites.json").write_text(json.dumps(
+            {"base": SPRITE_BASE, "sprites": {"0666-19": "666-poke-ball.png", "0003-0-f": "female/3.png"}}), encoding="utf-8")
+        r = load_rules(self.tmp)
+        self.assertEqual((r.sprite_base, r.sprites["0666-19"]), (SPRITE_BASE, "666-poke-ball.png"))
+        for bad in ({"base": "https://example.com/", "sprites": {}},
+                    {"base": SPRITE_BASE, "sprites": {"0001-0": "../x.png"}},
+                    {"base": SPRITE_BASE, "sprites": {"0001-0": "javascript:alert(1)"}}):
+            (self.tmp / "sprites.json").write_text(json.dumps(bad), encoding="utf-8")
+            with self.assertRaises(RulesError):
+                load_rules(self.tmp)
+        (self.tmp / "sprites.json").unlink()
+        self.assertEqual(load_rules(self.tmp).sprites, {})
+
     def test_serebii_file_is_optional(self):
         (self.tmp / "serebii.json").unlink(missing_ok=True)
         self.assertEqual(load_rules(self.tmp).serebii, {})

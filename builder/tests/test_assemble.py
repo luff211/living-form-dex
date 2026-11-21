@@ -131,7 +131,7 @@ class AssembleTests(unittest.TestCase):
         self.assertEqual([g["id"] for g in d["groups"]], ["FRLG", "SwSh"])
         self.assertEqual(d["groups"][0]["home_route_unverified"], True)
         self.assertEqual(d["rows"][0]["cells"]["SwSh"][0]["versions"], ["SW"])
-        self.assertEqual(d["meta"], {"pkhex": "1.2", "rows": 1})
+        self.assertEqual(d["meta"], {"pkhex": "1.2", "rows": 1, "sprite_base": ""})
         self.assertEqual(d["groups"][0]["links"], {})
 
     def test_to_json_carries_serebii_links_per_group(self):
@@ -139,6 +139,15 @@ class AssembleTests(unittest.TestCase):
         rl.serebii = {"SwSh": {"Route 1": "https://www.serebii.net/pokearth/galar/route1.shtml"}}
         d = to_json([run({})], rl, {"pkhex": "1"})
         self.assertEqual(d["groups"][1]["links"], {"Route 1": "https://www.serebii.net/pokearth/galar/route1.shtml"})
+
+    def test_to_json_carries_sprite_per_row(self):
+        rl = rules()
+        row = run({})
+        rl.sprite_base, rl.sprites = "https://x/", {row.id: "1.png"}
+        d = to_json([row], rl, {"pkhex": "1"})
+        self.assertEqual((d["meta"]["sprite_base"], d["rows"][0]["sprite"]), ("https://x/", "1.png"))
+        rl.sprites = {}
+        self.assertIsNone(to_json([row], rl, {"pkhex": "1"})["rows"][0]["sprite"])
 
 
 if __name__ == "__main__":

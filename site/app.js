@@ -151,7 +151,11 @@ function rowNode(row, groups, sharedDex, ticked) {
   box.checked = ticked.has(row.id);
   box.dataset.id = row.id;
 
-  const name = el("th", {scope: "row", class: "p2"}, row.name);
+  const name = el("th", {scope: "row", class: "p2"});
+  // decorative: the name sits next to it; fixed size keeps row heights steady while images load
+  if (row.sprite) name.append(el("img", {class: "sprite", src: data.meta.sprite_base + row.sprite, alt: "",
+                                         width: 40, height: 40, loading: "lazy", decoding: "async"}));
+  name.append(row.name);
   // narrow screens unpin the Form column, so the form also shows under the name
   if (label) name.append(el("span", {class: "formline", text: label}));
   const avail = rowAvailability(row, data.groups, owned);

@@ -85,13 +85,14 @@ def to_json(rows: list[Row], rules, raw: dict) -> dict:
     groups = [g for g in rules.games["groups"] if not g.get("other")]
     order = [g["id"] for g in groups]
     return {
-        "meta": {"pkhex": raw["pkhex"], "rows": len(rows)},
+        "meta": {"pkhex": raw["pkhex"], "rows": len(rows), "sprite_base": rules.sprite_base},
         "groups": [{"id": g["id"], "label": g["label"],
                     "versions": [{k: v[k] for k in ("code", "label", "mark")} for v in g["versions"]],
                     "home_route": g["home_route"]["text"],
                     "home_route_unverified": not g["home_route"]["verified"],
                     "links": rules.serebii.get(g["id"], {})} for g in groups],
-        "rows": [{"id": r.id, "dex": r.dex, "name": r.name, "form": r.form_name, "mega": r.mega,
+        "rows": [{"id": r.id, "dex": r.dex, "name": r.name, "form": r.form_name, "sprite": rules.sprites.get(r.id),
+                  "mega": r.mega,
                   "gmax": r.gmax, "gmax_unverified": r.gmax_unverified,
                   "cells": {g: [_entry_json(e) for e in r.cells[g]] for g in order if g in r.cells},
                   "other": [_entry_json(e) for e in r.other]} for r in rows],
