@@ -2149,6 +2149,56 @@
     "checked": "2026-11-20"
    },
    {
+    "species": 1009,
+    "form": 0,
+    "group": "SV",
+    "method": "Raid",
+    "place": "a crystal cavern",
+    "versions": null,
+    "ended": true,
+    "note": "Past 5-star event raids (2023-2026)",
+    "verified": true,
+    "checked": "2026-11-27"
+   },
+   {
+    "species": 1009,
+    "form": 0,
+    "group": "SV",
+    "method": "Event",
+    "place": "5-star Tera Raid, Walking Wake (Dec 2026)",
+    "versions": [
+     "SL"
+    ],
+    "note": "Tera Water, Lv. 75, one per save; 4 Dec 2026 to 8 Jan 2027 (Thai fan post; no official notice found yet)",
+    "verified": false,
+    "checked": "2026-11-27"
+   },
+   {
+    "species": 1010,
+    "form": 0,
+    "group": "SV",
+    "method": "Raid",
+    "place": "a crystal cavern",
+    "versions": null,
+    "ended": true,
+    "note": "Past 5-star event raids (2023-2026)",
+    "verified": true,
+    "checked": "2026-11-27"
+   },
+   {
+    "species": 1010,
+    "form": 0,
+    "group": "SV",
+    "method": "Event",
+    "place": "5-star Tera Raid, Iron Leaves (Dec 2026)",
+    "versions": [
+     "VL"
+    ],
+    "note": "Tera Psychic, Lv. 75, one per save; 4 Dec 2026 to 8 Jan 2027 (Thai fan post; no official notice found yet)",
+    "verified": false,
+    "checked": "2026-11-27"
+   },
+   {
     "species": 492,
     "form": 1,
     "group": "DPPt",
