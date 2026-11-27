@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import {
-  visibleGroups, entryOwned, summarize, versionMarks, rowMatches, rowAvailability, elsewhereLabels,
+  visibleGroups, entryOwned, summarize, versionMarks, rowMatches, rowAvailability, elsewhereLabels, expireEntries,
 } from "../logic.js";
 
 const v = (code, mark) => ({code, label: code, mark});
@@ -103,4 +103,12 @@ test("rowMatches ignores accents in name, form and query", async () => {
   assert.ok(rowMatches(row, "POKÉ"));
   assert.ok(rowMatches({dex: 669, name: "Flabébé", form: ""}, "flabebe"));
   assert.ok(!rowMatches(row, "pokx"));
+});
+
+test("expireEntries ends an event once its until time passes", () => {
+  const row = {cells: {SV: [e(["SL"], {until: "2027-01-07T23:59Z"}), e(["SL"])]}, other: []};
+  expireEntries([row], Date.parse("2027-01-07T23:00Z"));
+  assert.equal(row.cells.SV[0].ended, false);
+  expireEntries([row], Date.parse("2027-01-08T00:00Z"));
+  assert.deepEqual(row.cells.SV.map(x => x.ended), [true, false]);
 });

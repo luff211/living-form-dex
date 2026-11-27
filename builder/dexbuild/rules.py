@@ -123,6 +123,9 @@ def load_rules(rules_dir: Path) -> Rules:
                     _require(v in versions_of[e["group"]], where, f"version {v!r} is not in group {e['group']}")
                 for k in ("ended", "needs_other_game"):
                     _require(isinstance(e.get(k, False), bool), where, f"'{k}' must be a boolean")
+                u = e.get("until")
+                _require(u is None or isinstance(u, str) and re.fullmatch(r"\d{4}-\d\d-\d\dT\d\d:\d\dZ", u), where,
+                         "'until' must be a UTC time like 2027-01-07T23:59Z")
             else:
                 _require(isinstance(e.get("note"), str), where, "needs a string 'note'")
 

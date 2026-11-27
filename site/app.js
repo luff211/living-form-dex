@@ -1,7 +1,7 @@
 import {
   visibleGroups, entryOwned, summarize, versionMarks, rowAvailability, elsewhereLabels, rowMatches,
   STATE_KEY, emptyState, parseState, serializeState, orphanTicks, tickedCount, setTick, setOwned, latestState,
-  visibleRange, placeLink,
+  visibleRange, placeLink, expireEntries,
 } from "./logic.js";
 
 const $ = id => document.getElementById(id);
@@ -360,6 +360,7 @@ async function start() {
     if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText} for data/dex.json.gz`);
     data = await new Response(res.body.pipeThrough(new DecompressionStream("gzip"))).json();
     if (!data || !Array.isArray(data.rows) || !Array.isArray(data.groups)) throw new Error("The data file has no rows.");
+    expireEntries(data.rows);
   } catch (err) {
     data = undefined;
     $("main").replaceChildren(el("div", {class: "load-error"},

@@ -2146,7 +2146,8 @@
     "note": "Mystery Gift via Internet until 26 Feb 2027, 01:59 UTC; needs Rewards unlocked in Mable's Research",
     "source": "https://www.pokemon.com/uk/news/receive-a-poke-ball-pattern-vivillon-in-pokemon-legends-z-a",
     "verified": true,
-    "checked": "2026-11-20"
+    "checked": "2026-11-20",
+    "until": "2027-02-26T01:59Z"
    },
    {
     "species": 1009,
@@ -2169,9 +2170,10 @@
     "versions": [
      "SL"
     ],
-    "note": "Tera Water, Lv. 75, one per save; 4 Dec 2026 to 8 Jan 2027 (Thai fan post; no official notice found yet)",
-    "verified": false,
-    "checked": "2026-11-27"
+    "note": "Tera Water, Lv. 75, one per save; 4 Dec 2026 00:00 to 7 Jan 2027 23:59 UTC",
+    "verified": true,
+    "checked": "2026-11-27",
+    "until": "2027-01-07T23:59Z"
    },
    {
     "species": 1010,
@@ -2194,9 +2196,10 @@
     "versions": [
      "VL"
     ],
-    "note": "Tera Psychic, Lv. 75, one per save; 4 Dec 2026 to 8 Jan 2027 (Thai fan post; no official notice found yet)",
-    "verified": false,
-    "checked": "2026-11-27"
+    "note": "Tera Psychic, Lv. 75, one per save; 4 Dec 2026 00:00 to 7 Jan 2027 23:59 UTC",
+    "verified": true,
+    "checked": "2026-11-27",
+    "until": "2027-01-07T23:59Z"
    },
    {
     "species": 492,

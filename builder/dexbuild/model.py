@@ -13,6 +13,7 @@ class Entry:
     note: str | None = None
     gender: str | None = None   # "m" / "f" when the source fixes gender
     needs_other_game: bool = False   # needs another game's save data or items; not obtainable starting this game alone
+    until: str | None = None    # ISO UTC time a limited event ends; the site marks it ended after that
 
 
 @dataclass

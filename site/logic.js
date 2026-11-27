@@ -29,6 +29,12 @@ export function rowMatches(row, query) {
 
 // Usable by a player starting that game alone: not ended and not needing another game's save data.
 export const isLive = e => !e.ended && !e.needs_other_game;
+
+// Limited events carry an end time; once it passes, treat them as ended without waiting for a rebuild.
+export function expireEntries(rows, now = Date.now()) {
+  for (const r of rows) for (const es of [...Object.values(r.cells ?? {}), r.other ?? []])
+    for (const e of es) if (e.until && now > Date.parse(e.until)) e.ended = true;
+}
 const live = list => (list ?? []).filter(isLive);
 
 export function rowAvailability(row, groups, owned) {

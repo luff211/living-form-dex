@@ -1,5 +1,6 @@
 """Join direct, Evolve and Breed entries with the hand-kept rules into finished rows and the dex.json shape."""
 from dataclasses import replace
+from datetime import datetime, timezone
 
 from .derive import add_evolve_and_breed
 from .direct import direct_entries, dlc_for, sv_narrow
@@ -42,8 +43,9 @@ def fill(rows: list[Row], entries: dict, rules) -> None:
             rep = [m for m in methods if _matches(m, row, g)]
             if rep:
                 cell = [Entry(m["method"], m["place"], tuple(m["versions"] or mine[g]), m.get("dlc"),
-                              ended=m.get("ended", False), unverified=not m["verified"], note=m.get("note"),
-                              needs_other_game=m.get("needs_other_game", False)) for m in rep]
+                              ended=m.get("ended", False) or _past(m.get("until")), unverified=not m["verified"],
+                              note=m.get("note"), needs_other_game=m.get("needs_other_game", False),
+                              until=m.get("until")) for m in rep]
             for a in (a for a in notes if _matches(a, row, g)):
                 cell = [replace(e, note=f"{e.note}; {a['note']}" if e.note else a["note"],
                                 unverified=e.unverified or not a["verified"]) for e in cell]
@@ -92,9 +94,14 @@ def assemble(raw: dict, rules) -> tuple[list[Row], list[LeftOut]]:
     return rows, left
 
 
+def _past(until: str | None) -> bool:
+    return until is not None and datetime.fromisoformat(until) < datetime.now(timezone.utc)
+
+
 def _entry_json(e: Entry) -> dict:
     return {"method": e.method, "place": e.place, "versions": list(e.versions), "dlc": e.dlc,
-            "ended": e.ended, "unverified": e.unverified, "note": e.note, "needs_other_game": e.needs_other_game}
+            "ended": e.ended, "unverified": e.unverified, "note": e.note, "needs_other_game": e.needs_other_game,
+            "until": e.until}
 
 
 def to_json(rows: list[Row], rules, raw: dict) -> dict:

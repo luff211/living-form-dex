@@ -73,6 +73,13 @@ class AssembleTests(unittest.TestCase):
              "ended": True, "verified": True, "checked": ""}
         self.assertTrue(run({}, methods=[m]).cells["SwSh"][0].ended)
 
+    def test_method_rule_until_ends_after_that_time(self):
+        m = {"species": 1, "form": 0, "group": "SwSh", "method": "Event", "place": "E", "versions": None,
+             "verified": True, "checked": ""}
+        past = run({}, methods=[{**m, "until": "2020-01-01T00:00Z"}]).cells["SwSh"][0]
+        future = run({}, methods=[{**m, "until": "2999-01-01T00:00Z"}]).cells["SwSh"][0]
+        self.assertEqual((past.ended, future.ended, future.until), (True, False, "2999-01-01T00:00Z"))
+
     def test_gender_row_drops_other_gender_entries(self):
         es = {("SwSh", 1, 0): [Entry("Wild", "A", ("SW",), gender="f"), Entry("Wild", "B", ("SW",), gender="m"),
                                Entry("Wild", "C", ("SW",))]}
